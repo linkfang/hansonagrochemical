@@ -1,6 +1,9 @@
 body{
+    width: 100%;
     margin: 0;
+    padding: 0;
     font-family: Calibri;
+    background-color: hsla(165, 0%, 97%, 1.0);
 }
 
 h1{
@@ -8,6 +11,8 @@ h1{
 }
 
 .header{
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     margin: 0.5rem 1rem 0.75rem 1rem;
@@ -20,33 +25,68 @@ h1{
 nav{
     display: flex;
     align-items: flex-end;
-    color: hsla(175, 25%, 30%, 1.0);
+    color: hsla(165, 25%, 30%, 1.0);
 }
 
 nav a{
-    padding: 0.1rem 10px;
+    padding: 0.15rem 10px 0.05rem 10px;
     margin-right: 0.5rem;
     text-decoration: none;
-    color: hsla(175, 25%, 30%, 1.0);
-    border-bottom: 2.5px solid hsla(175, 42%, 42%, 0);
+    color: hsla(165, 25%, 30%, 1.0);
+    border-bottom: 2.5px solid hsla(165, 40%, 36%, 0);
     transition: all 0.35s ease-out;
 }
 
 nav a:hover{
-    border-bottom: 2.5px solid hsla(175, 42%, 42%, 1.0);
+    border-bottom: 2.5px solid hsla(165, 40%, 36%, 1.0);
     border-radius: 30px;
     color: white;
-    background-color: hsla(175, 42%, 42%, 1.0);
+    background-color: hsla(165, 40%, 36%, 1.0);
     transition: all 0.35s ease-out;
 }
 
 nav .currentPage{
-    border-bottom: 2.5px solid hsla(175, 42%, 42%, 1.0);
+    border-bottom: 2.5px solid hsla(165, 40%, 36%, 1.0);
 }
 
 
 .headerImg{
-    width: 100vw;
+    width: 100%;
     height: 350px;
     overflow: hidden;
+    background-image:url(../img/sth2.png);
+    background-size: cover;
+    /* background-position: bottom; */
+}
+
+
+/************* Main Content **************/
+
+.contentCnt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+h1{
+    color: hsla(165, 0%, 22%, 1.0);
+}
+
+.slashSymbol{
+    color: hsla(165, 40%, 32%, 1.0);
+    padding: 0 1rem;
+    font-weight: 500;
 }
