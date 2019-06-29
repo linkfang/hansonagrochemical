@@ -56,7 +56,6 @@ nav .currentPage{
     overflow: hidden;
     background-image:url(../img/sth2.png);
     background-size: cover;
-    /* background-position: bottom; */
 }
 
 
@@ -70,15 +69,17 @@ nav .currentPage{
 }
 
 .content{
-    width: 92%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .subtitle{
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-top: 1.25rem;
 }
 
 h1{
@@ -87,6 +88,16 @@ h1{
 
 .slashSymbol{
     color: hsla(165, 40%, 32%, 1.0);
-    padding: 0 1rem;
+    padding: 0 1.25rem;
     font-weight: 500;
+}
+
+.content:nth-child(odd) {
+    background-color:hsla(165, 0%, 92%, 1.0);
+}
+
+.content p{
+    width: 90%;
+    padding: 0.5rem 0 3rem 0;
+    margin: 0;
 }
