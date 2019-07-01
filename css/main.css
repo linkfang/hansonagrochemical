@@ -125,6 +125,18 @@ h1{
     padding: 0 3rem 3rem 3rem;
 }
 
+.picAndWordRow{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fasImg{
+    font-size: 5rem;
+    margin: 0 1rem 0 0;
+    color: hsla(165, 40%, 36%, 1.0);
+}
+
 .contactWords{
     padding: 0.15rem !important;
 }
@@ -141,7 +153,6 @@ h1{
 .form input{
     border: 1.5px solid hsla(165, 0%, 65%, 1.0);
     border-radius: 2px;
-    width: 100%;
     min-width: 200px;
 }
 
@@ -166,7 +177,7 @@ h1{
 
 .narrow{
     padding: 0 0 2.75rem 0;
-    width: 50%;
+    width: 40%;
 }
 
 .SubmitBtn{
@@ -182,4 +193,15 @@ h1{
 
 .SubmitBtn:active{
     background-color: hsla(165, 30%, 26%, 1.0);
+}
+
+.picAndWordRow p{
+    padding: 0;
+}
+
+
+/*********** Consult ***********/
+.contentConsult{
+    display: flex;
+    flex-direction: row;
 }
