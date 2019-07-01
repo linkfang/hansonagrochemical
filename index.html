@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Han</title>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -73,35 +76,33 @@
 
         <div class="content">
             <div class="subtitle">
-                <h1> <span class="slashSymbol">/</span> Contact <span class="slashSymbol">/</span> </h1>
+                <h1> <span class="slashSymbol">/</span> Submit an inquery <span class="slashSymbol">/</span> </h1>
             </div>
-
-            <div class="picAndWord">
-                <img class="picEven" src="img/forest.jpg" alt="">
-                <p class="word">
-                    Shuyou Han, PhD
-                    Address: 569 Rosehill Avenue, Stittsville, Ontario K2S 0E8 Canada
-                    Cell:+1-519-702-2185  WeChat: hanshuyoucan  Skype: hanshuyou
-                </p>
+            <div class="picAndWord narrow">
+                <div class="form">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required>
+                </div>
+                <div class="form form2">
+                    <label for="detail">Detail</label>
+                    <textarea class="formDetail" id="detail" required></textarea>
+                </div>
+                <button class="SubmitBtn">Submit</button>
             </div>
-            <p>
-            </p>
         </div>
 
         <div class="content">
-            <div class="subtitle">
-                <h1> <span class="slashSymbol">/</span> Submit an inquery <span class="slashSymbol">/</span> </h1>
-            </div>
-            <div class="picAndWord">
-                    <img class="pic" src="img/corn3.jpg" alt="picture">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, voluptates quisquam accusantium
-                        consequatur illo sunt, id quam deserunt fuga eum consequuntur natus corporis cumque. Aliquam sequi
-                        sunt
-                        delectus quo aliquid!
-                    </p>
+                <div class="subtitle">
+                    <h1> <span class="slashSymbol">/</span> Contact <span class="slashSymbol">/</span> </h1>
                 </div>
-        </div>
+    
+                <div class="picAndWord narrow">
+                    <p class="contactWords word name">Shuyou Han, PhD</p>
+                    <p class="contactWords"><i class="fas fa-map-marked-alt"></i> 569 Rosehill Avenue, Stittsville, Ontario K2S 0E8 Canada</p>
+                    <p class="contactWords"><i class="fas fa-mobile-alt"></i> +1-519-702-2185 | <i class="fab fa-weixin"></i> hanshuyoucan | <i class="fab fa-skype"></i> hanshuyou</p>
+                    <p class="contactWords"><i class="fas fa-envelope"></i> shuyou.han@hansonagrochemical.com</p>
+                </div>
+            </div>
     </div>
 
     <script src="main.js"></script>
