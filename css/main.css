@@ -57,7 +57,7 @@ nav .currentPage{
     width: 100%;
     height: 350px;
     overflow: hidden;
-    background-image: url(../img/corn6.jpg);
+    background-image: url(../img/colza2.png);
     background-size: cover;
 }
 
@@ -212,6 +212,14 @@ h1{
 
 .picAndWordRow p{
     padding: 0;
+}
+
+footer {
+    padding: 2rem 0 1.2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: hsla(188, 45%, 30%, 1);
+    color: white;
 }
 
 
