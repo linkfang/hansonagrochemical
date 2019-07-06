@@ -19,9 +19,14 @@ h1{
     margin: 0.5rem 1rem 0.75rem 1rem;
 }
 
+.logo{
+    width: 120px;
+    /* background-color: aqua; */
+}
+
 .header header{
     font-size: 2.75rem;
-    margin: 0.5rem 0 0.75rem 0;
+    margin: 0.5rem 0 0.25rem 0;
     color: hsla(165, 0%, 22%, 1.0);
 }
 
@@ -29,6 +34,7 @@ nav{
     display: flex;
     align-items: flex-end;
     color: hsla(165, 25%, 30%, 1.0);
+    /* background-color: yellowgreen; */
 }
 
 nav a{
@@ -69,8 +75,8 @@ nav .currentPage{
 }
 
 .headerImgC{
-    background-image:url(../img/farm.jpg);
-    background-position-y: 40%
+    background-image:url(../img/wheat3.png);
+    background-position-y: 55%
 }
 
 .headerImgSales{
@@ -118,15 +124,9 @@ h1{
     margin: 0 0 0.75rem 0;
 }
 
-/* .slashSymbol{
-    color: hsla(165, 40%, 32%, 1.0);
-    padding: 0 1.25rem;
-    font-weight: 500;
-} */
-
-/* .content:nth-child(odd) {
-    background-color:hsla(165, 0%, 92%, 1.0);
-} */
+.email{
+    text-decoration: underline;
+}
 
 .grayArea{
     background-color:hsla(165, 0%, 92%, 1.0);
@@ -164,7 +164,7 @@ h1{
 }
 
 .picAndWord{
-    padding: 0 3rem 3rem 3rem;
+    padding: 0 3rem 0rem 3rem;
 }
 
 .wide{
@@ -202,6 +202,12 @@ h1{
 
 .name{
     padding-top: 0.6rem !important;
+}
+
+.wwd{
+    margin: 0.75rem 0 0 0;
+    padding: 0;
+    /* background-color: yellowgreen; */
 }
 
 .form{
