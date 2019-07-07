@@ -308,12 +308,16 @@ footer {
 }
 
 
-/*********** Consult ***********/
 .contentConsult{
     display: flex;
     flex-direction: row;
 }
 
+.fasPdf{
+    color: hsla(165, 35%, 35%, 1.0);
+}
 
-/*********** Sales ***********/
+.links{
+    display: grid;
+}
 
