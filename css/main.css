@@ -3,7 +3,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: Calibri;
-    background-color: hsla(165, 0%, 97%, 1.0);
+    /* background-color: hsla(165, 0%, 97%, 1.0); */
 }
 
 h1{
@@ -81,11 +81,12 @@ nav .currentPage{
 
 .headerImgSales{
     background-image:url(../img/sth2.png);
+    background-position-y: 15%
 }
 
 .headerImgLink{
-    background-image: url(../img/link.jpg);
-    background-position-y: 40%
+    background-image: url(../img/wheat6.png);
+    background-position-y: 55%
 }
 
 
@@ -109,7 +110,7 @@ nav .currentPage{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
 }
 
 .subtitle{
@@ -208,6 +209,30 @@ h1{
     margin: 0.75rem 0 0 0;
     padding: 0;
     /* background-color: yellowgreen; */
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 3rem 0 3rem;
+}
+
+.logos img{
+    max-width: 120px;
+    max-height: 80px;
+    margin: 0.5rem;
+}
+
+.whiteRow{
+    background-color: white;
+    width: 100%;
+}
+
+h3{
+color: hsla(165, 0%, 22%, 1.0);
 }
 
 .form{
