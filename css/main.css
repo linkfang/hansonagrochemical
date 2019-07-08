@@ -63,7 +63,9 @@ nav .currentPage{
 .headerImg,
 .headerImgC,
 .headerImgSales,
-.headerImgLink{
+.headerImgLink,
+.headerImgServices,
+.headerImgShots{
     width: 100%;
     height: 160px;
     overflow: hidden;
@@ -88,6 +90,17 @@ nav .currentPage{
 .headerImgLink{
     background-image: url(../img/wheat6.png);
     background-position-y: 55%
+}
+
+.headerImgServices{
+    background-image: url(../img/wheat5.png);
+    background-position-y: 45%
+}
+
+.headerImgShots{
+    background-image: url(../img/forest6.png);
+    background-position-y: 55%
+
 }
 
 
@@ -229,7 +242,7 @@ h1{
 .logos img{
     max-width: 120px;
     max-height: 80px;
-    margin: 0.5rem;
+    margin: 0.75rem;
 }
 
 .whiteRow{
@@ -333,7 +346,8 @@ footer {
 .links{
     display: flex;
     flex-wrap: wrap;
-
+    /* background-color: aqua; */
+    justify-content: center;
 }
 
 .links div,
@@ -422,6 +436,71 @@ h4{
     margin-right: 3rem;
 }
 
+.logoSmall{
+    max-width: 280px !important;
+    max-height: 100px !important;
+    width: 220px;
+}
+
+/* .hide{
+    display: none;
+} */
+
+#humburger{
+    display: none;
+}
+
+#humburger i{
+    color: hsla(165, 35%, 35%, 1.0);
+    font-size: 1.25rem;
+}
+
+.logoTitle{
+    color: hsla(165, 35%, 35%, 1.0);
+    font-size: 1.25rem;
+}
+
+.logoTitle span{
+    font-weight: 900;
+    margin: 0 0 0 1rem;
+}
+
+@media (max-width:990px) {
+    .header nav{
+        margin-top: 4rem;
+        padding: 1.5rem 0 1rem 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        transform: translateX(-1rem) translateY(-0.5rem) scale(1);
+        background-color: hsla(165, 0%, 92%, 1.0);
+        transition: all 1.25 ease-out;
+    }
+
+    .disappear{
+        transform: scale(0.01) !important;
+        transition: all 1.25 ease-out;
+    }
+
+    .header nav a{
+        margin-top: 1rem;
+    }
+
+    #humburger{
+        display: block;
+        z-index: 1000;
+    }
+}
+
+@media (max-width:980px) {
+    .contentRow{
+        flex-direction: column;
+    }
+
+    .links div{
+    flex-basis: 100%;
+}
+}
 
 @media (max-width:838px) {
     .contentRow{
@@ -431,5 +510,4 @@ h4{
     .links div{
     flex-basis: 100%;
 }
-
 }

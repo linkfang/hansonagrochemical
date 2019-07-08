@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Han</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div class="header">
         <header><img class="logo" src="img/logo-t.png" alt=""></header>
-        <nav>
+        <div id="humburger" class="hide">
+                <div class="logoTitle hide">
+                    <i class="fas fa-bars"></i><span>MENU</span>
+                </div>
+        </div>
+        <nav class="disappear navHum">
             <a href="index.html">About us</a>
             <a href="consulting.html">Events and Publications</a>
+            <a href="services.html">Our services</a>
             <a href="links.html">Resources</a>
             <a class="currentPage" href="contact.html">Contact us</a>
+            <a href="shots.html">Shuyou's shots</a>
+
         </nav>
     </div>
 
@@ -51,7 +61,7 @@
                         </div>
                         <div class="form">
                             <label for="subject">Phone</label>
-                            <input type="number" name="subject" id="subject" placeholder="xxx xxx-xxxx" required>
+                            <input type="tel" name="subject" id="subject" placeholder="xxx xxx-xxxx" required>
                         </div>
                     </div>
 
