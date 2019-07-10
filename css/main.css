@@ -320,6 +320,7 @@ color: hsla(165, 0%, 22%, 1.0);
 footer {
     /* padding: 1rem 0 0.75rem 0; */
     padding: 0.5rem 0;
+    margin: 4rem 0 0 0;
     display: flex;
     justify-content: center;
     background-color:hsla(165, 0%, 92%, 1.0);
@@ -442,10 +443,6 @@ h4{
     width: 220px;
 }
 
-/* .hide{
-    display: none;
-} */
-
 #humburger{
     display: none;
 }
@@ -470,7 +467,19 @@ h4{
     margin:0 0 0 2rem;
     position: absolute;
     transform: translateY(0.5rem);
-    /* background-color: aqua; */
+}
+
+.shots{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shots img{
+    width: 45%;
+    min-width: 380px;
+    margin: 0.25rem;
 }
 
 @media (max-width:990px) {
