@@ -1,6 +1,5 @@
 let han={
     init: function(){
-        console.log("running!!!!!");
         document.querySelector("#humburger").addEventListener("click", ()=>{
             document.querySelector(".navHum").classList.toggle("disappear");
         })

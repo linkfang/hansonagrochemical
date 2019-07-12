@@ -121,11 +121,51 @@ nav .currentPage{
     margin: 1rem 0 1.5rem 0;
 }
 
-.row{
+.rowWrap{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 2rem 0 0 0;
+}
+
+.rowWrap .content{
+    width: 50%;
+    min-width: 360px;
+}
+
+.rowWrapForText{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rowWrapForText .col{
+    width: 45%;
+    min-width: 300px;
+}
+
+.colCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.col img{
+    width: 90%;
+}
+
+.rowWrapForText .col3{
+    width: 30%;
+    min-width: 300px;
+    margin: 0.5rem 0.35rem;
+}
+
+.col:nth-child(1){
+    margin-right: 0.75rem;
+}
+
+.col:nth-child(2){
+    margin-left: 0.75rem;
 }
 
 .subtitle{
@@ -223,7 +263,6 @@ h1{
 .wwd{
     margin: 3.5rem 0 0 0;
     padding: 0;
-    /* background-color: yellowgreen; */
 }
 
 .littleTitle{
@@ -534,4 +573,27 @@ h4{
     transform: translateY(0.5rem);
     /* background-color: aqua; */
 }
+}
+
+@media (max-width:736px){
+    .rowWrapForText{
+        justify-content: center;
+    }
+
+    .rowWrapForText .col,
+    .rowWrap .content{
+        width: 90%;
+    }
+
+    .col{
+        margin: 1.75rem 0 0 0 !important;
+    }
+
+    .rowWrapForText .col3{
+        width: 90%;
+    }
+
+    .narrowList h3{
+        margin-left: 2rem;
+    }
 }
