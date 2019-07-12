@@ -1,4 +1,4 @@
-body{
+body {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -6,12 +6,12 @@ body{
     /* background-color: hsla(165, 0%, 97%, 1.0); */
 }
 
-h1{
+h1 {
     font-size: 1.5rem;
     margin: 0.5rem 0 1rem 0 !important;
 }
 
-.header{
+.header {
     margin: 0;
     padding: 0 0 0.15rem 2rem;
     display: flex;
@@ -20,25 +20,25 @@ h1{
     margin: 0.5rem 1rem 0.75rem 1rem;
 }
 
-.logo{
+.logo {
     width: 120px;
     /* background-color: aqua; */
 }
 
-.header header{
+.header header {
     font-size: 2.75rem;
     margin: 0.5rem 0 0.25rem 0;
     color: hsla(165, 0%, 22%, 1.0);
 }
 
-nav{
+nav {
     display: flex;
     align-items: flex-end;
     color: hsla(165, 25%, 30%, 1.0);
     /* background-color: yellowgreen; */
 }
 
-nav a{
+nav a {
     padding: 0.15rem 15px 0.1rem 15px;
     margin-right: 2rem;
     text-decoration: none;
@@ -47,7 +47,7 @@ nav a{
     transition: all 0.35s ease-out;
 }
 
-nav a:hover{
+nav a:hover {
     border-bottom: 2.5px solid hsla(165, 40%, 36%, 1.0);
     border-radius: 30px;
     color: white;
@@ -55,7 +55,7 @@ nav a:hover{
     transition: all 0.35s ease-out;
 }
 
-nav .currentPage{
+nav .currentPage {
     border-bottom: 2.5px solid hsla(165, 40%, 36%, 1.0);
 }
 
@@ -65,7 +65,7 @@ nav .currentPage{
 .headerImgSales,
 .headerImgLink,
 .headerImgServices,
-.headerImgShots{
+.headerImgShots {
     width: 100%;
     height: 160px;
     overflow: hidden;
@@ -73,47 +73,46 @@ nav .currentPage{
     background-size: cover;
 }
 
-.headerImg{
+.headerImg {
     background-position-y: 70%
 }
 
-.headerImgC{
-    background-image:url(../img/wheat3.png);
+.headerImgC {
+    background-image: url(../img/wheat3.png);
     background-position-y: 55%
 }
 
-.headerImgSales{
-    background-image:url(../img/sth2.png);
+.headerImgSales {
+    background-image: url(../img/sth2.png);
     background-position-y: 15%
 }
 
-.headerImgLink{
+.headerImgLink {
     background-image: url(../img/wheat6.png);
     background-position-y: 55%
 }
 
-.headerImgServices{
+.headerImgServices {
     background-image: url(../img/wheat5.png);
     background-position-y: 45%
 }
 
-.headerImgShots{
+.headerImgShots {
     background-image: url(../img/forest6.png);
     background-position-y: 55%
-
 }
 
 
 /************* Main Content **************/
 
-.contentCnt{
+.contentCnt {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content{
+.content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -121,7 +120,7 @@ nav .currentPage{
     margin: 1rem 0 1.5rem 0;
 }
 
-.rowWrap{
+.rowWrap {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -129,68 +128,68 @@ nav .currentPage{
     margin: 2rem 0 0 0;
 }
 
-.rowWrap .content{
+.rowWrap .content {
     width: 50%;
     min-width: 360px;
 }
 
-.rowWrapForText{
+.rowWrapForText {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.rowWrapForText .col{
+.rowWrapForText .col {
     width: 45%;
     min-width: 300px;
 }
 
-.colCol{
+.colCol {
     display: flex;
     flex-direction: column;
 }
 
-.col img{
+.col img {
     width: 90%;
 }
 
-.rowWrapForText .col3{
+.rowWrapForText .col3 {
     width: 30%;
     min-width: 300px;
     margin: 0.5rem 0.35rem;
 }
 
-.col:nth-child(1){
+.col:nth-child(1) {
     margin-right: 0.75rem;
 }
 
-.col:nth-child(2){
+.col:nth-child(2) {
     margin-left: 0.75rem;
 }
 
-.subtitle{
+.subtitle {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 1.25rem;
 }
 
-h1{
+h1 {
     color: hsla(165, 0%, 22%, 1.0);
     margin: 0 0 0.75rem 0;
 }
 
-.email{
+.email {
     text-decoration: underline;
 }
 
-.grayArea{
-    background-color:hsla(165, 0%, 92%, 1.0);
+.grayArea {
+    background-color: hsla(165, 0%, 92%, 1.0);
     width: 100%;
     padding: 3rem 0 0 0;
 }
 
-.rowCtn{
+.rowCtn {
     display: flex;
     justify-content: space-between;
     /* background-color: yellowgreen; */
@@ -198,43 +197,43 @@ h1{
     margin: 0 3rem 0 3rem;
 }
 
-.content p{
+.content p {
     padding: 0.6rem 0 0 0;
     margin: 0;
     line-height: 1.75rem;
     font-weight: 100;
 }
 
-.pic{
+.pic {
     width: 16%;
     min-width: 150px;
     float: left;
     padding: 0.75rem 1rem 0 0;
 }
 
-.picEven{
+.picEven {
     width: 16%;
     min-width: 150px;
     float: right;
     padding: 0.75rem 0 3rem 1rem;
 }
 
-.picAndWord{
+.picAndWord {
     padding: 0 3rem 0rem 3rem;
 }
 
-.wide{
+.wide {
     width: 100%;
     padding: 0;
 }
 
-.picAndWordRow{
+.picAndWordRow {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.iconCtn{
+.iconCtn {
     margin: 2.5rem 0 0 0;
     width: 100px;
     height: 100px;
@@ -246,30 +245,26 @@ h1{
     transition: all 0.25s ease-out;
 }
 
-.fasImg{
+.fasImg {
     font-size: 2.25rem;
     padding: 1rem;
     color: hsla(165, 40%, 36%, 1.0);
 }
 
-.contactWords{
-    padding: 0.15rem !important;
-}
-
-.name{
+.name {
     padding-top: 0.6rem !important;
 }
 
-.wwd{
+.wwd {
     margin: 3.5rem 0 0 0;
     padding: 0;
 }
 
-.littleTitle{
+.littleTitle {
     margin: 1.5rem 0 1rem 0;
 }
 
-.logos{
+.logos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -278,47 +273,47 @@ h1{
     margin: 0 3rem 0 3rem;
 }
 
-.logos img{
+.logos img {
     max-width: 120px;
     max-height: 80px;
     margin: 0.75rem;
 }
 
-.whiteRow{
+.whiteRow {
     background-color: white;
     width: 100%;
 }
 
-h3{
-color: hsla(165, 0%, 22%, 1.0);
+h3 {
+    color: hsla(165, 0%, 22%, 1.0);
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
 }
 
-.formRow{
+.formRow {
     display: flex;
     justify-content: space-between;
     margin-top: 0.75rem;
 }
 
-.formRow .form{
+.formRow .form {
     width: 100%;
 }
 
-.formRow .form:nth-child(1){
+.formRow .form:nth-child(1) {
     margin: 0 1rem 0 0;
 }
 
-.form input{
+.form input {
     border: 1.5px solid hsla(165, 0%, 65%, 1.0);
     border-radius: 2px;
     min-width: 200px;
 }
 
-.form .formDetail{
+.form .formDetail {
     height: 100px;
     border: 1.5px solid hsla(165, 0%, 65%, 1.0);
     border-radius: 2px;
@@ -326,18 +321,18 @@ color: hsla(165, 0%, 22%, 1.0);
     min-width: 200px;
 }
 
-.form2{
+.form2 {
     margin-top: 0.75rem;
 }
 
 .form input:focus,
-.form .formDetail:focus{
+.form .formDetail:focus {
     border: 1.5px solid hsla(165, 40%, 36%, 1.0);
     transition: all 0.5S ease-out;
 
 }
 
-.SubmitBtn{
+.SubmitBtn {
     border: none;
     background-color: hsla(165, 40%, 36%, 1.0);
     border-radius: 2px;
@@ -348,11 +343,11 @@ color: hsla(165, 0%, 22%, 1.0);
     color: white;
 }
 
-.SubmitBtn:active{
+.SubmitBtn:active {
     background-color: hsla(165, 30%, 26%, 1.0);
 }
 
-.picAndWordRow p{
+.picAndWordRow p {
     padding: 0;
 }
 
@@ -362,28 +357,28 @@ footer {
     margin: 4rem 0 0 0;
     display: flex;
     justify-content: center;
-    background-color:hsla(165, 0%, 92%, 1.0);
+    background-color: hsla(165, 0%, 92%, 1.0);
     color: hsla(165, 0%, 60%, 1.0);
 }
 
 
-.contentConsult{
+.contentConsult {
     display: flex;
     flex-direction: row;
 }
 
-.fasPdf{
+.fasPdf {
     color: hsla(165, 35%, 35%, 1.0);
     font-size: 1.1rem;
     transition: all 0.25s linear;
 }
 
-.fasPdf:hover{
+.fasPdf:hover {
     color: hsla(165, 65%, 42%, 1.0);
     transition: all 0.25s linear;
 }
 
-.links{
+.links {
     display: flex;
     flex-wrap: wrap;
     /* background-color: aqua; */
@@ -391,7 +386,7 @@ footer {
 }
 
 .links div,
-.links p{
+.links p {
     display: flex;
     /* flex-basis: 405px; */
     flex-basis: 33%;
@@ -402,127 +397,168 @@ footer {
     margin: 0.1rem;
 }
 
-.links p{
+.links p {
     flex-basis: 372px;
     padding: 0 1rem 0 1rem;
     line-height: 1.3rem;
 }
 
-.linksTall p{
+.linksTall p {
     height: 7.5rem;
 }
 
-.links div a{
+.links div a {
     margin: 0 0.35rem 0 1rem;
 }
 
-.linksAs div a:nth-child(2){
+.linksAs div a:nth-child(2) {
     margin: 0 0.35rem 0 0.15rem;
 }
 
-.links div span{
+.links div span {
     margin-right: 1rem;
 }
 
 .links div:nth-child(even),
-.links p:nth-child(even){
+.links p:nth-child(even) {
     background-color: hsla(165, 15%, 89%, 1.0);
 }
 
-.mainCtn{
+.mainCtn {
     margin: 0 3rem 0 3rem;
 }
 
-.subtitleSec{
+.subtitleSec {
     margin: 5rem 0 1.5rem 0;
 }
 
-.titleCa{
+.titleCa {
     margin-top: 3rem;
 }
 
-h4{
+h4 {
     margin: 2.75rem 0 0.5rem 0 !important;
 }
 
-.contact{
-    width: 55%;
-    margin: 2rem auto;
+.contact {
+    /* width: 55%; */
+    /* margin: 2rem auto; */
 }
 
-.contact input{
+.contact input {
     font-family: Calibri;
     font-size: 1rem;
     padding: 0 0 0 0.25rem;
     height: 2rem;
 }
 
-.para{
+.para {
     padding-top: 1rem !important;
 }
 
-.contentRow{
+.contentRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.contentRow div{
+.contentRow div {
     flex-basis: 45%;
 }
 
-.contentRow div:nth-child(1){
+.contentRow div:nth-child(1) {
     margin-right: 3rem;
 }
 
-.logoSmall{
+.logoSmall {
     max-width: 280px !important;
     max-height: 100px !important;
     width: 220px;
 }
 
-#humburger{
+#humburger {
     display: none;
 }
 
-#humburger i{
+#humburger i {
     color: hsla(165, 35%, 35%, 1.0);
     font-size: 1.25rem;
 }
 
-.logoTitle{
+.logoTitle {
     color: hsla(165, 35%, 35%, 1.0);
     font-size: 1.25rem;
 }
 
-.logoTitle span{
+.logoTitle span {
     font-weight: 900;
     margin: 0 0 0 1rem;
 }
 
-.companyTitle{
+.companyTitle {
     font-size: 2rem;
-    margin:0 0 0 2rem;
+    margin: 0 0 0 2rem;
     position: absolute;
     transform: translateY(0.5rem);
 }
 
-.shots{
+.shots {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.shots img{
+.shots img {
     width: 45%;
     min-width: 380px;
     margin: 0.25rem;
 }
 
+.bold {
+    font-weight: 900;
+}
+
+.contactCtn i,
+.contactCtn .bold {
+    color: hsla(165, 0%, 22%, 1.0);
+}
+
+.contactRow {
+    display: flex;
+    flex-direction: row;
+    border-top: 1.5px solid hsla(165, 14%, 55%, 1.0);
+}
+
+.contactWords {
+    /* padding: 0 !important; */
+    width: 140px;
+}
+
+.contactRow p {
+    /* padding: 0 !important; */
+}
+
+.socialMedia {
+    margin-top: 1.75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.75rem;
+}
+
+.socialMedia i {
+    color: hsla(165, 14%, 55%, 1.0);
+    padding: 0.2rem;
+}
+
+.socialMedia i:hover {
+    color: hsla(165, 40%, 35%, 1.0);
+}
+
 @media (max-width:990px) {
-    .header nav{
+    .header nav {
         margin-top: 4rem;
         padding: 1.5rem 0 1rem 1rem;
         flex-direction: column;
@@ -533,67 +569,82 @@ h4{
         transition: all 1.25 ease-out;
     }
 
-    .disappear{
-        transform: scale(0.01) !important;
+    .disappear {
+        transform: scale(0.001) !important;
         transition: all 1.25 ease-out;
     }
 
-    .header nav a{
+    .header nav a {
         margin-top: 1rem;
     }
 
-    #humburger{
+    #humburger {
         display: block;
         z-index: 1000;
     }
 }
 
+@media (max-width:1070px) {
+    .contactWrap {
+        justify-content: center;
+    }
+
+    .contactWrap .col {
+        width: 90%;
+    }
+
+    .formRow {
+        flex-direction: column;
+    }
+}
+
 @media (max-width:980px) {
-    .contentRow{
+    .contentRow {
         flex-direction: column;
     }
 
-    .links div{
-    flex-basis: 100%;
-}
+    .links div {
+        flex-basis: 100%;
+    }
 }
 
 @media (max-width:838px) {
-    .contentRow{
+    .contentRow {
         flex-direction: column;
     }
 
-    .links div{
-    flex-basis: 100%;
-}
-.companyTitle{
-    font-size: 1.5rem;
-    margin:0 0 0 2rem;
-    position: absolute;
-    transform: translateY(0.5rem);
-    /* background-color: aqua; */
-}
+    .links div {
+        flex-basis: 100%;
+    }
+
+    .companyTitle {
+        font-size: 1.5rem;
+        margin: 0 0 0 2rem;
+        position: absolute;
+        transform: translateY(0.5rem);
+        /* background-color: aqua; */
+    }
 }
 
-@media (max-width:736px){
-    .rowWrapForText{
+@media (max-width:736px) {
+    .rowWrapForText {
         justify-content: center;
     }
 
     .rowWrapForText .col,
-    .rowWrap .content{
+    .rowWrap .content {
         width: 90%;
     }
 
-    .col{
+    .col {
         margin: 1.75rem 0 0 0 !important;
     }
 
-    .rowWrapForText .col3{
+    .rowWrapForText .col3 {
         width: 90%;
     }
 
-    .narrowList h3{
+    .narrowList h3 {
         margin-left: 2rem;
     }
 }
