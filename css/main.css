@@ -499,7 +499,8 @@ h4 {
 }
 
 .shots img {
-    width: 45%;
+    width: 45vw;
+    height: 33.75vw;
     min-width: 380px;
     margin: 0.25rem;
 }
