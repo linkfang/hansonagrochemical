@@ -150,7 +150,7 @@ nav .currentPage {
 }
 
 .rowWrapForText .col {
-    width: 40%;
+    width: 46%;
     min-width: 300px;
 }
 
@@ -160,7 +160,8 @@ nav .currentPage {
 }
 
 .col img {
-    width: 90%;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .rowWrapForText .col3 {
@@ -187,6 +188,7 @@ nav .currentPage {
 h1 {
     color: hsla(165, 0%, 22%, 1.0);
     margin: 0 0 0.75rem 0;
+    font-size: 2rem;
 }
 
 .email {
@@ -210,7 +212,7 @@ h1 {
     padding: 0.6rem 0 0 0;
     margin: 0;
     line-height: 1.75rem;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .pic {
@@ -445,6 +447,10 @@ footer {
     margin: 5rem 0 1.5rem 0;
 }
 
+.subtitleBorder {
+    border-bottom: 2px solid hsla(165, 14%, 75%, 1.0);
+}
+
 .titleCa {
     margin-top: 3rem;
 }
@@ -573,8 +579,8 @@ h4 {
 }
 
 .bannerText{
-    /* text-decoration: none; */
-    width: 100%;
+    width: 550px;
+    text-align: center;
     color: white;
     transform: translateX(100vw);
     animation: bannerRoll 18s linear infinite;
@@ -691,6 +697,10 @@ h4 {
 
     .picAndWord {
         padding: 0;
+    }
+
+    .subtitleSec {
+        border-bottom: 2px solid hsla(165, 14%, 75%, 1.0);
     }
 
 
