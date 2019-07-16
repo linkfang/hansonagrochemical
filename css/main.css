@@ -173,10 +173,6 @@ nav .currentPage {
     margin-right: 0.75rem;
 }
 
-/* .col:nth-child(2) {
-    margin-left: 0.75rem;
-} */
-
 .subtitle {
     display: flex;
     width: 100%;
@@ -330,7 +326,6 @@ h3 {
     border-radius: 2px;
     transition: all 0.5S ease-out;
     min-width: 200px;
-    /* margin-top: 1rem; */
 }
 
 .form2 {
@@ -405,11 +400,6 @@ footer {
     background-color: hsla(165, 5%, 94%, 1.0);
     align-items: center;
     margin: 0.1rem;
-}
-
-.links p {
-    /* flex-basis: 372px; */
-    /* padding: 0 1rem 0 1rem; */
 }
 
 .linksTall div {
