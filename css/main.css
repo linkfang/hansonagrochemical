@@ -61,46 +61,33 @@ nav .currentPage {
 
 .headerImg,
 .headerImgC,
-.headerImgSales,
+.headerImgContact,
 .headerImgLink,
 .headerImgServices,
 .headerImgShots {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    width: 100vw;
     height: 160px;
     overflow: hidden;
-    background-image: url(../img/colza2.png);
-    background-size: cover;
 }
 
-.headerImg {
-    background-position-y: 70%
+.headerImg img {
+    width: 100vw;
+    transform: translateY(-5%);
 }
 
-.headerImgC {
-    background-image: url(../img/wheat3.png);
-    background-position-y: 55%
+.headerImgC img,
+.headerImgShots img,
+.headerImgServices img {
+    width: 100vw;
+    transform: translateY(3%);
 }
 
-.headerImgSales {
-    background-image: url(../img/sth2.png);
-    background-position-y: 15%
+.headerImgContact img {
+    width: 100vw;
+    transform: translateY(30%);
 }
-
-.headerImgLink {
-    background-image: url(../img/wheat6.png);
-    background-position-y: 55%
-}
-
-.headerImgServices {
-    background-image: url(../img/wheat5.png);
-    background-position-y: 45%
-}
-
-.headerImgShots {
-    background-image: url(../img/forest6.png);
-    background-position-y: 55%
-}
-
 
 /************* Main Content **************/
 
