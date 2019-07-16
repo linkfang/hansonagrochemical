@@ -142,13 +142,11 @@ nav .currentPage {
     width: 100%;
 }
 
-/* .aboutSYH .col:nth-child(2){
-    padding-left: 2.25rem;
-} */
-/* 
-.aboutSYH .col:nth-child(3){
-    padding-right: 3rem;
-} */
+.leftAlign{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
 
 .rowWrapForText .col {
     width: 46%;
@@ -526,8 +524,8 @@ h4 {
 }
 
 .shots img {
-    width: 45vw;
-    height: 33.75vw;
+    width: 43vw;
+    height: 32.25vw;
     min-width: 340px;
     min-height: 255px;
     margin: 0.25rem;
