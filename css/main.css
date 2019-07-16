@@ -127,6 +127,7 @@ nav .currentPage {
 
 .aboutSYH{
     width: 100%;
+    margin-top: 3.5rem;
 }
 
 .leftAlign{
@@ -150,6 +151,13 @@ nav .currentPage {
     margin-top: 1rem;
 }
 
+.square{
+    height: 20px;
+    background-color: hsla(165, 25%, 40%, 1.0);
+    width: 50px;
+    margin-bottom: 0.25rem;
+}
+
 .rowWrapForText .col3 {
     width: 30%;
     min-width: 300px;
@@ -162,8 +170,10 @@ nav .currentPage {
 
 .subtitle {
     display: flex;
+    flex-direction: column;
     width: 100%;
     justify-content: center;
+    align-items: center;
     margin-top: 1.25rem;
 }
 
@@ -425,6 +435,7 @@ footer {
 
 .subtitleBorder {
     border-bottom: 2px solid hsla(165, 14%, 75%, 1.0);
+    align-items: flex-start;
 }
 
 .titleCa {
@@ -662,7 +673,7 @@ h4 {
 
     .rowWrapForText .col,
     .rowWrap .content {
-        width: 90%;
+        width: 100%;
     }
 
     .col {
@@ -692,4 +703,10 @@ h4 {
     .mainCtn {
         margin: 0 1.25rem 0 1.25rem;
     }
+
+    .header{
+        padding: 0.5rem 0 0.875rem 0rem;
+    }
+
+
 }
