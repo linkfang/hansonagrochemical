@@ -9,6 +9,7 @@ body {
 h1 {
     font-size: 1.5rem;
     margin: 0.5rem 0 1rem 0 !important;
+    font-family: 'Roboto';
 }
 
 .header {
@@ -141,13 +142,13 @@ nav .currentPage {
     width: 100%;
 }
 
-.aboutSYH .col:nth-child(2){
+/* .aboutSYH .col:nth-child(2){
     padding-left: 2.25rem;
-}
-
+} */
+/* 
 .aboutSYH .col:nth-child(3){
     padding-right: 3rem;
-}
+} */
 
 .rowWrapForText .col {
     width: 46%;
@@ -174,9 +175,9 @@ nav .currentPage {
     margin-right: 0.75rem;
 }
 
-.col:nth-child(2) {
+/* .col:nth-child(2) {
     margin-left: 0.75rem;
-}
+} */
 
 .subtitle {
     display: flex;
@@ -230,7 +231,7 @@ h1 {
 }
 
 .picAndWord {
-    padding: 0 3rem 0rem 3rem;
+    padding: 0;
 }
 
 .wide {
@@ -440,7 +441,7 @@ footer {
 }
 
 .mainCtn {
-    margin: 0 3rem 0 3rem;
+    margin: 0 5rem 0 5rem;
 }
 
 .subtitleSec {
@@ -673,6 +674,10 @@ h4 {
         position: absolute;
         transform: translateY(0.5rem);
     }
+
+    .mainCtn {
+        margin: 0 3rem 0 3rem;
+    }
 }
 
 @media (max-width:736px) {
@@ -705,5 +710,11 @@ h4 {
     .subtitleSec {
         border-bottom: 2px solid hsla(165, 14%, 75%, 1.0);
     }
+}
 
+@media (max-width:450px) {
+
+    .mainCtn {
+        margin: 0 1.25rem 0 1.25rem;
+    }
 }
