@@ -302,7 +302,7 @@ h3 {
 .form {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 0.8rem;
 }
 
 .formRow {
@@ -316,7 +316,7 @@ h3 {
 }
 
 .formRow .form:nth-child(1) {
-    margin: 0 1rem 0 0;
+    margin: 0.8rem 1rem 0 0;
 }
 
 .form input {
@@ -331,7 +331,7 @@ h3 {
     border-radius: 2px;
     transition: all 0.5S ease-out;
     min-width: 200px;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .form2 {
