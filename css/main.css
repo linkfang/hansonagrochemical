@@ -587,6 +587,17 @@ h4 {
     justify-content: center;
 }
 
+.leaflet{
+    font-size: 3rem;
+}
+
+.moreAbout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes bannerRoll{
     0%{
         transform: translateX(-90vw);
