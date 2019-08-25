@@ -63,6 +63,10 @@ nav .currentPage {
     border-bottom: 2.5px solid hsla(165, 40%, 36%, 1.0);
 }
 
+.verticalText {
+    display: grid;
+}
+
 
 .headerImg,
 .headerImgC,
