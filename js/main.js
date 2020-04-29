@@ -29,12 +29,19 @@ let han={
 
         document.getElementById("newsTitle").textContent = currentNews.title
         document.getElementById("newsDate").textContent = currentNews.releaseDate
+        if (currentNews.url != ""){
+            console.log("anchor is not empty")
+            document.getElementById("newsAchor").classList.remove("hide")
+            document.getElementById("newsAchor").href = currentNews.url
+        }
+        console.log("anchor is empty")
         document.getElementById("newsContent").innerHTML = currentNews.content
     },
 
     hideModalNews: ()=>{
         document.getElementById("overlay").className = "hide"
         document.getElementById("modalNews").className = "hide"
+        document.getElementById("newsAchor").className = "hide"
     }
 }
 
