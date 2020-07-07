@@ -21,7 +21,7 @@ const newsData = [{
     },
     {
         id: 4,
-        title: "Agrochemical Patent Watch 2019 Shuyou Han During 2019",
+        title: "Agrochemical Patent Watch 2019 Shuyou Han",
         releaseDate: "May 01, 2020",
         content: "Agrochemical Patent Watch 2019 Shuyou Han During 2019, a total of 6,600 novel crop protection-relevant patents were published on Espacenet, the European Patent Office. The following text and graphs summarise patents published by geological distribution, major applicants and chemical function. 1. Published patents by continent and country At the continent level, Asia was the innovation powerhouse for crop protection products. Out of 6,600 patents, Asia accounted for half of the filed patents with 3,258, followed by Europe with 1,260 patents (making up 19%), North America with 918 (14%), South America with 809 (12%), Oceania with 269 (3%) and Africa with 86 (1%). <a href='https://lnkd.in/gvvMyJR'>https://lnkd.in/gvvMyJR</a> 2019年全球农药专利观察，从专利地理分布，主要申请者和化合物分类等方面做了详尽综述 <a href='https://lnkd.in/ghsTmun'>https://lnkd.in/ghsTmun</a> ",
         url: "https://www.linkedin.com/posts/activity-6661964957237809154-E9m6"
