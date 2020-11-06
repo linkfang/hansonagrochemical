@@ -391,6 +391,10 @@ footer {
     transition: all 0.25s linear;
 }
 
+audio{
+    margin: 0.2rem;
+}
+
 .links {
     display: flex;
     flex-wrap: wrap;
