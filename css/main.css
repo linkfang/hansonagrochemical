@@ -388,10 +388,6 @@ footer {
   transition: all 0.25s linear;
 }
 
-.videoMaterial {
-  width: 80%;
-}
-
 audio {
   margin: 0.2rem;
 }
