@@ -420,6 +420,8 @@ audio {
 
 .links div a {
   margin: 0 0.35rem 0 1rem;
+  text-decoration: none;
+  color: black;
 }
 
 .linksAs div a:nth-child(2) {
