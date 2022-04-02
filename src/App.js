@@ -13,7 +13,13 @@ import logo from "./assets/logo.svg";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        window.location.hostname.includes("localhost")
+          ? "/"
+          : "/hansonAgrochemicalPreview/"
+      }
+    >
       <div className="banner"></div>
 
       <div className="navBarCtn displayCenter">
