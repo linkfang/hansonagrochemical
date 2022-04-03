@@ -56,7 +56,10 @@ function App() {
             <div className="navBtnCtn">
               <a
                 className="navBtn"
-                onMouseEnter={() => setShowPesticideSubMenu(true)}
+                onMouseEnter={() => {
+                  setShowPesticideSubMenu(true);
+                  clearTimeout(willHidePesticideSubMenu);
+                }}
                 onMouseLeave={hidePesticideSubMenu}
               >
                 {NAV_MENU.pesticide[language]}{" "}
@@ -86,7 +89,10 @@ function App() {
             <div className="navBtnCtn">
               <a
                 className="navBtn"
-                onMouseEnter={() => setShowResourceSubMenu(true)}
+                onMouseEnter={() => {
+                  setShowResourceSubMenu(true);
+                  clearTimeout(willHideResourcesSubMenu);
+                }}
                 onMouseLeave={hideResourcesSubMenu}
               >
                 {NAV_MENU.resources[language]}{" "}
