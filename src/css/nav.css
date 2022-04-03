@@ -11,7 +11,8 @@
 .navBarCtn {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: calc(100vw - 40px);
+  padding: 0 20px;
   height: 72px;
   z-index: 100;
 }
@@ -29,6 +30,7 @@
 .navBar {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 15px 0;
   max-width: var(--max-content-width);
@@ -36,13 +38,13 @@
 }
 
 .logo {
-  width: 100px;
+  width: 90px;
 }
 
 .navItems {
+  display: none;
   position: absolute;
   flex: 1;
-  display: flex;
   justify-content: center;
   width: 100%;
   left: 0;
@@ -116,4 +118,24 @@
   transform: scale(0);
   opacity: 0;
   transition: opacity 0.25s ease-out, transform 0s ease-out 0.25s;
+}
+
+@media (min-width: 900px) {
+  .navBar {
+    justify-content: flex-start;
+  }
+  .navItems {
+    display: flex;
+  }
+  .navBarCtn {
+    width: calc(100vw - 90px);
+    padding: 0 45px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navBarCtn {
+    width: calc(100vw - 120px);
+    padding: 0 60px;
+  }
 }

@@ -1,15 +1,15 @@
 @import url("./variables.css");
 
+html {
+  width: 100vw;
+}
+
 body {
   overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
   width: 12px; /* width of the entire scrollbar */
-}
-
-body::-webkit-scrollbar-track {
-  background: #fff; /* color of the tracking area */
 }
 
 body::-webkit-scrollbar-thumb {
@@ -28,7 +28,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mainContent {
-  width: 100vw;
+  width: calc(100vw - 40px);
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -46,16 +47,11 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 25px;
 }
 
-.col-8 {
-  width: 25%;
-}
-
-.col-12 {
-  width: 42%;
-}
-
+.col-8,
+.col-12,
 .col-24 {
   width: 100%;
 }
@@ -66,4 +62,46 @@ body::-webkit-scrollbar-thumb {
 
 .mb-15 {
   margin-bottom: 15px;
+}
+
+@media (min-width: 900px) {
+  .mainContent {
+    width: calc(100vw - 90px);
+    padding: 0 45px;
+  }
+  .col-8 {
+    width: 20%;
+  }
+
+  .col-12 {
+    width: 38%;
+  }
+
+  .col-24 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navBarCtn {
+    width: calc(100vw - 120px);
+    padding: 0 60px;
+  }
+
+  .mainContent {
+    width: calc(100vw - 120px);
+    padding: 0 60px;
+  }
+
+  .col-8 {
+    width: 25%;
+  }
+
+  .col-12 {
+    width: 42%;
+  }
+
+  .col-24 {
+    width: 100%;
+  }
 }
