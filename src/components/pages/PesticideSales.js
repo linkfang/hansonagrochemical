@@ -1,3 +1,7 @@
 export default function PesticideSales() {
-  return <div>PesticideSales</div>;
+  return (
+    <div className="pageCtn">
+      <h1>Pesticide Sales</h1>
+    </div>
+  );
 }

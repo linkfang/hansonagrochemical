@@ -1,66 +1,6 @@
-@import url("./general.css");
-
-.banner {
-  background-image: url("./assets/banners/colza.jpg");
-  background-position: 0 20%;
-  background-size: cover;
-  height: 280px;
-  width: 100vw;
-}
-
-.navBarCtn {
-  position: fixed;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.94);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
-  width: 100vw;
-}
-
-.displayCenter {
-  display: flex;
-  justify-content: center;
-}
-
-.navBar {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 20px 0;
-  max-width: 1280px;
-  width: 100%;
-}
-
-.logo {
-  width: 100px;
-}
-
-.navItems {
-  position: absolute;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  left: 0;
-  right: 0;
-}
-
-.navBtn {
-  font-size: 14px;
-  margin: 0 15px;
-  padding: 5px;
-  text-decoration: none;
-  color: rgb(105, 105, 105);
-  font-weight: 500;
-  border-bottom: 3px solid hsla(165, 40%, 36%, 0);
-  transition: all 0.25s ease-out;
-}
-
-.navBtn:hover {
-  color: hsl(165, 40%, 36%);
-  border-bottom: 3px solid hsl(165, 40%, 36%);
-  transition: all 0.25s ease-in;
-}
+@import url("./css/general.css");
+@import url("./css/nav.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 
 .mainContent {
   width: 100vw;

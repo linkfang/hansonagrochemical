@@ -1,3 +1,7 @@
 export default function PestControl() {
-  return <div>PestControl</div>;
+  return (
+    <div className="pageCtn">
+      <h1>Perst Control</h1>
+    </div>
+  );
 }

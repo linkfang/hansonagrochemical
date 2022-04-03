@@ -1,0 +1,88 @@
+.banner {
+  background-image: url("../assets/banners/colza.jpg");
+  background-position: 0 20%;
+  background-size: cover;
+  height: 280px;
+  width: 100vw;
+}
+
+.navBarCtn {
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  width: 100vw;
+}
+
+.navBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.logo {
+  width: 100px;
+}
+
+.navItems {
+  position: absolute;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.navBtnCtn {
+  height: 100%;
+}
+.navBtn {
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+  font-weight: 500;
+  border-bottom: 3px solid hsla(165, 40%, 36%, 0);
+  transition: all 0.25s ease-out;
+}
+
+.navBtn:hover {
+  color: hsl(165, 40%, 36%);
+  border-bottom: 3px solid hsl(165, 40%, 36%);
+  transition: all 0.25s ease-in;
+}
+
+.bi-chevron-down {
+  margin-left: 2px;
+}
+
+.subMenu {
+  padding: 20px 10px;
+  border-radius: 6px;
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.25s ease-out;
+}
+
+.subMenu a {
+  margin: 5px 15px;
+}
+
+.hide {
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.25s ease-out, transform 0s ease-out 0.25s;
+}

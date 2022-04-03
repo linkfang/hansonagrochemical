@@ -1,3 +1,7 @@
 export default function NewsAndInterview() {
-  return <div>NewsAndInterview</div>;
+  return (
+    <div className="pageCtn">
+      <h1>News and Interview</h1>
+    </div>
+  );
 }

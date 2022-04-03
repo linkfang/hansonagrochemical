@@ -15,3 +15,12 @@ body::-webkit-scrollbar-thumb {
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid #fff; /* creates padding around scroll thumb */
 }
+
+.bi {
+  font-size: 12px;
+}
+
+.displayCenter {
+  display: flex;
+  justify-content: center;
+}
