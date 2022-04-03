@@ -1,0 +1,7 @@
+:root {
+  --primary-white-bg-color: hsla(165, 0%, 100%, 0.85);
+  --primary-blur: blur(10px);
+  --border-radius: 6px;
+  --primary-color: hsl(165, 40%, 36%);
+  --max-content-width: 1280px;
+}
