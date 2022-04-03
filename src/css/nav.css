@@ -92,6 +92,25 @@
   margin: 5px 15px;
 }
 
+.langSwitchCtn {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.langSwitchCtn p {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.langSwitchCtn p:hover {
+  color: var(--primary-color);
+  transition: all 0.25s ease-in;
+}
+
 .hide {
   transform: scale(0);
   opacity: 0;

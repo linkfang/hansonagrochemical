@@ -11,12 +11,15 @@ import OnlineResources from "./components/pages/OnlineResources";
 import ContactUs from "./components/pages/ContactUs";
 import logo from "./assets/logo.svg";
 import { useState } from "react";
+import { NAV_MENU } from "./constants/language";
 
 function App() {
   const [showPesticideSubMenu, setShowPesticideSubMenu] = useState(false);
   const [willHidePesticideSubMenu, setWillHidePesticideSubMenu] = useState("");
   const [showResourcesSubMenu, setShowResourceSubMenu] = useState(false);
   const [willHideResourcesSubMenu, setWillHideResourcesSubMenu] = useState("");
+
+  const [language, setLanguage] = useState("en");
 
   const hidePesticideSubMenu = () => {
     const timer = setTimeout(() => setShowPesticideSubMenu(false), 250);
@@ -47,7 +50,7 @@ function App() {
           <div className="navItems">
             <div className="navBtnCtn">
               <Link className="navBtn" to="/">
-                Company Intro
+                {NAV_MENU.companyIntro[language]}
               </Link>
             </div>
 
@@ -57,7 +60,8 @@ function App() {
                 onMouseEnter={() => setShowPesticideSubMenu(true)}
                 onMouseLeave={hidePesticideSubMenu}
               >
-                Pesticide <i className="bi bi-chevron-down"></i>
+                {NAV_MENU.pesticide[language]}{" "}
+                <i className="bi bi-chevron-down"></i>
               </a>
 
               <div
@@ -66,17 +70,17 @@ function App() {
                 onMouseLeave={hidePesticideSubMenu}
               >
                 <Link className="navBtn" to="/pesticide-registration">
-                  Pesticide Registration
+                  {NAV_MENU.pesticideRegistration[language]}
                 </Link>
                 <Link className="navBtn" to="/pesticide-sales">
-                  Pesticide Sales
+                  {NAV_MENU.pesticideSales[language]}
                 </Link>
               </div>
             </div>
 
             <div className="navBtnCtn">
               <Link className="navBtn" to="/pest-control">
-                Pest Control
+                {NAV_MENU.pestControl[language]}
               </Link>
             </div>
 
@@ -86,7 +90,8 @@ function App() {
                 onMouseEnter={() => setShowResourceSubMenu(true)}
                 onMouseLeave={hideResourcesSubMenu}
               >
-                Resources <i className="bi bi-chevron-down"></i>
+                {NAV_MENU.resources[language]}{" "}
+                <i className="bi bi-chevron-down"></i>
               </a>
               <div
                 className={showResourcesSubMenu ? "subMenu" : "subMenu hide"}
@@ -94,25 +99,35 @@ function App() {
                 onMouseLeave={hideResourcesSubMenu}
               >
                 <Link className="navBtn" to="/market-survey">
-                  Market Survey
+                  {NAV_MENU.marketSurvey[language]}
                 </Link>
                 <Link className="navBtn" to="/talks">
-                  Talks at Conferences
+                  {NAV_MENU.talks[language]}
                 </Link>
                 <Link className="navBtn" to="/news-and-interview">
-                  News and Interview
+                  {NAV_MENU.newsAndInterview[language]}
                 </Link>
                 <Link className="navBtn" to="/online-resources">
-                  Online Resources
+                  {NAV_MENU.onlineResources[language]}
                 </Link>
               </div>
             </div>
 
             <div className="navBtnCtn">
               <Link className="navBtn" to="/contact">
-                Contact Us
+                {NAV_MENU.contactUs[language]}
               </Link>
             </div>
+          </div>
+
+          <div className="langSwitchCtn">
+            <p
+              onClick={() =>
+                language === "en" ? setLanguage("zh") : setLanguage("en")
+              }
+            >
+              {language === "en" ? "中文" : "EN"}
+            </p>
           </div>
         </nav>
       </div>
