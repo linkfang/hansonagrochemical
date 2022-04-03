@@ -38,4 +38,32 @@ body::-webkit-scrollbar-thumb {
 .pageCtn {
   width: 100%;
   max-width: var(--max-content-width);
+  margin-top: 80px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-8 {
+  width: 25%;
+}
+
+.col-12 {
+  width: 42%;
+}
+
+.col-24 {
+  width: 100%;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
 }

@@ -1,0 +1,31 @@
+.card {
+  background-color: #fff;
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.25s ease-out;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease-out;
+}
+
+.card h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.card p {
+    line-height: 24px;
+}
+
+.intro-icon {
+  width: 60px;
+}

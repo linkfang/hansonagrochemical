@@ -11,3 +11,10 @@ export const NAV_MENU = {
   onlineResources: { en: "Online Resources", zh: "网上植保资源" },
   contactUs: { en: "Contac Ut", zh: "联系我们" },
 };
+
+export const COMPANY_INTRO = {
+  mission: { en: "Mission", zh: "使命" },
+  vision: { en: "Vision", zh: "愿景" },
+  aboutHanson: { en: "About Hanson", zh: "关于汉森" },
+  aboutMe: { en: "About Me", zh: "关于自己" },
+};

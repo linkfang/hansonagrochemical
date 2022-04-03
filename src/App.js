@@ -18,7 +18,6 @@ function App() {
   const [willHidePesticideSubMenu, setWillHidePesticideSubMenu] = useState("");
   const [showResourcesSubMenu, setShowResourceSubMenu] = useState(false);
   const [willHideResourcesSubMenu, setWillHideResourcesSubMenu] = useState("");
-
   const [language, setLanguage] = useState("en");
 
   const hidePesticideSubMenu = () => {
@@ -133,7 +132,10 @@ function App() {
       </div>
       <div className="mainContent">
         <Routes>
-          <Route path="/" element={<CompanyIntro />}></Route>
+          <Route
+            path="/"
+            element={<CompanyIntro language={language} />}
+          ></Route>
           <Route
             path="/pesticide-registration"
             element={<PesticideRegistration />}
