@@ -13,6 +13,7 @@
   top: 0;
   width: 100vw;
   height: 72px;
+  z-index: 100;
 }
 
 .navBarCtnBlur {
