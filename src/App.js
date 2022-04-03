@@ -17,6 +17,15 @@ function App() {
   const [willHidePesticideSubMenu, setWillHidePesticideSubMenu] = useState("");
   const [showResourcesSubMenu, setShowResourceSubMenu] = useState(false);
   const [willHideResourcesSubMenu, setWillHideResourcesSubMenu] = useState("");
+
+  const hidePesticideSubMenu = () => {
+    const timer = setTimeout(() => setShowPesticideSubMenu(false), 250);
+    setWillHidePesticideSubMenu(timer);
+  };
+  const hideResourcesSubMenu = () => {
+    const timer = setTimeout(() => setShowResourceSubMenu(false), 250);
+    setWillHideResourcesSubMenu(timer);
+  };
   return (
     <BrowserRouter
       basename={
@@ -28,6 +37,7 @@ function App() {
       <div className="banner"></div>
 
       <div className="navBarCtn displayCenter">
+        <div className="navBarCtnBlur"></div>
         <nav className="navBar">
           <img
             className="logo"
@@ -45,13 +55,7 @@ function App() {
               <a
                 className="navBtn"
                 onMouseEnter={() => setShowPesticideSubMenu(true)}
-                onMouseLeave={() => {
-                  const timer = setTimeout(
-                    () => setShowPesticideSubMenu(false),
-                    250
-                  );
-                  setWillHidePesticideSubMenu(timer);
-                }}
+                onMouseLeave={hidePesticideSubMenu}
               >
                 Pesticide <i className="bi bi-chevron-down"></i>
               </a>
@@ -59,7 +63,7 @@ function App() {
               <div
                 className={showPesticideSubMenu ? "subMenu" : "subMenu hide"}
                 onMouseEnter={() => clearTimeout(willHidePesticideSubMenu)}
-                onMouseLeave={() => setShowPesticideSubMenu(false)}
+                onMouseLeave={hidePesticideSubMenu}
               >
                 <Link className="navBtn" to="/pesticide-registration">
                   Pesticide Registration
@@ -80,20 +84,14 @@ function App() {
               <a
                 className="navBtn"
                 onMouseEnter={() => setShowResourceSubMenu(true)}
-                onMouseLeave={() => {
-                  const timer = setTimeout(
-                    () => setShowResourceSubMenu(false),
-                    250
-                  );
-                  setWillHideResourcesSubMenu(timer);
-                }}
+                onMouseLeave={hideResourcesSubMenu}
               >
                 Resources <i className="bi bi-chevron-down"></i>
               </a>
               <div
                 className={showResourcesSubMenu ? "subMenu" : "subMenu hide"}
                 onMouseEnter={() => clearTimeout(willHideResourcesSubMenu)}
-                onMouseLeave={() => setShowResourceSubMenu(false)}
+                onMouseLeave={hideResourcesSubMenu}
               >
                 <Link className="navBtn" to="/market-survey">
                   Market Survey

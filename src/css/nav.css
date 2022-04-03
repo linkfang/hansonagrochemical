@@ -1,17 +1,27 @@
+@import url("./variables.css");
+
 .banner {
   background-image: url("../assets/banners/colza.jpg");
   background-position: 0 20%;
   background-size: cover;
-  height: 280px;
+  height: 310px;
   width: 100vw;
 }
 
 .navBarCtn {
   position: fixed;
   top: 0;
-  background-color: rgba(255, 255, 255, 0.88);
+  width: 100vw;
+  height: 72px;
+}
+
+.navBarCtnBlur {
+  background-color: var(--primary-white-bg-color);
+  backdrop-filter: var(--primary-blur);
+  position: fixed;
+  top: 0;
+  height: 72px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px);
   width: 100vw;
 }
 
@@ -53,8 +63,8 @@
 }
 
 .navBtn:hover {
-  color: hsl(165, 40%, 36%);
-  border-bottom: 3px solid hsl(165, 40%, 36%);
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
   transition: all 0.25s ease-in;
 }
 
@@ -64,13 +74,14 @@
 
 .subMenu {
   padding: 20px 10px;
-  border-radius: 6px;
+  border-radius: var(--border-radius);
   position: absolute;
   top: 60px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #fff;
+  backdrop-filter: var(--primary-blur);
+  background-color: var(--primary-white-bg-color);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   opacity: 1;
   transform: scale(1);
