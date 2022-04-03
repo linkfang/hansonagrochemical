@@ -19,6 +19,7 @@ function App() {
   const [showResourcesSubMenu, setShowResourceSubMenu] = useState(false);
   const [willHideResourcesSubMenu, setWillHideResourcesSubMenu] = useState("");
   const [language, setLanguage] = useState("en");
+  const [showOverlay, setShowOverlay] = useState(false);
 
   const hidePesticideSubMenu = () => {
     const timer = setTimeout(() => setShowPesticideSubMenu(false), 250);
@@ -135,7 +136,23 @@ function App() {
             </p>
           </div>
         </nav>
+
+        <div className="hamburgerMenuIcon">
+          <i
+            class={showOverlay ? "bi bi-list" : "bi bi-list active"}
+            onClick={() => setShowOverlay(!showOverlay)}
+          ></i>
+          <i
+            class={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"}
+            onClick={() => setShowOverlay(!showOverlay)}
+          ></i>
+        </div>
       </div>
+
+      <div
+        className={showOverlay ? "hambergurMenu active" : "hambergurMenu"}
+      ></div>
+
       <div className="mainContent">
         <Routes>
           <Route
@@ -158,6 +175,13 @@ function App() {
           <Route path="/contact" element={<ContactUs />}></Route>
         </Routes>
       </div>
+      <footer>© Hanson Agrochemical Consulting® 2022</footer>
+
+      <div
+        id="overlay"
+        className={showOverlay && "active"}
+        onClick={() => setShowOverlay(false)}
+      ></div>
     </BrowserRouter>
   );
 }

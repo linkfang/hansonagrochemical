@@ -10,6 +10,7 @@ body {
 
 body::-webkit-scrollbar {
   width: 12px; /* width of the entire scrollbar */
+  display: none;
 }
 
 body::-webkit-scrollbar-thumb {
@@ -64,7 +65,34 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 15px;
 }
 
+footer {
+  margin: 60px 0 35px;
+  text-align: center;
+  color: rgb(186, 186, 186);
+}
+
+#overlay.active {
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.4s ease-out, transform 0s linear;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  transform: scale(0);
+  z-index: 10;
+  transition: background-color 0.4s ease-out, transform 0s ease-out 0.4s;
+}
+
 @media (min-width: 900px) {
+  body::-webkit-scrollbar {
+    display: block;
+  }
   .mainContent {
     width: calc(100vw - 90px);
     padding: 0 45px;
