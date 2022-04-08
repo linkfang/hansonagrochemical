@@ -30,23 +30,13 @@ function App() {
     setWillHideResourcesSubMenu(timer);
   };
   return (
-    <BrowserRouter
-      basename={
-        window.location.hostname.includes("localhost")
-          ? "/"
-          : "/hansonAgrochemicalPreview/"
-      }
-    >
+    <BrowserRouter basename={window.location.hostname.includes("localhost") ? "/" : "/hansonAgrochemicalPreview/"}>
       <div className="banner"></div>
 
       <div className="navBarCtn displayCenter">
         <div className="navBarCtnBlur"></div>
         <nav className="navBar">
-          <img
-            className="logo"
-            src={logo}
-            alt="Hanson Agrochemical Consulting logo"
-          />
+          <img className="logo" src={logo} alt="Hanson Agrochemical Consulting logo" />
           <div className="navItems">
             <div className="navBtnCtn">
               <Link className="navBtn" to="/">
@@ -63,8 +53,7 @@ function App() {
                 }}
                 onMouseLeave={hidePesticideSubMenu}
               >
-                {NAV_MENU.pesticide[language]}{" "}
-                <i className="bi bi-chevron-down"></i>
+                {NAV_MENU.pesticide[language]} <i className="bi bi-chevron-down"></i>
               </a>
 
               <div
@@ -96,8 +85,7 @@ function App() {
                 }}
                 onMouseLeave={hideResourcesSubMenu}
               >
-                {NAV_MENU.resources[language]}{" "}
-                <i className="bi bi-chevron-down"></i>
+                {NAV_MENU.resources[language]} <i className="bi bi-chevron-down"></i>
               </a>
               <div
                 className={showResourcesSubMenu ? "subMenu" : "subMenu hide"}
@@ -127,49 +115,28 @@ function App() {
           </div>
 
           <div className="langSwitchCtn">
-            <p
-              onClick={() =>
-                language === "en" ? setLanguage("zh") : setLanguage("en")
-              }
-            >
+            <p onClick={() => (language === "en" ? setLanguage("zh") : setLanguage("en"))}>
               {language === "en" ? "中文" : "EN"}
             </p>
           </div>
         </nav>
 
         <div className="hamburgerMenuIcon">
-          <i
-            class={showOverlay ? "bi bi-list" : "bi bi-list active"}
-            onClick={() => setShowOverlay(!showOverlay)}
-          ></i>
-          <i
-            class={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"}
-            onClick={() => setShowOverlay(!showOverlay)}
-          ></i>
+          <i class={showOverlay ? "bi bi-list" : "bi bi-list active"} onClick={() => setShowOverlay(!showOverlay)}></i>
+          <i class={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"} onClick={() => setShowOverlay(!showOverlay)}></i>
         </div>
       </div>
 
-      <div
-        className={showOverlay ? "hambergurMenu active" : "hambergurMenu"}
-      ></div>
+      <div className={showOverlay ? "hambergurMenu active" : "hambergurMenu"}></div>
 
       <div className="mainContent">
         <Routes>
-          <Route
-            path="/"
-            element={<CompanyIntro language={language} />}
-          ></Route>
-          <Route
-            path="/pesticide-registration"
-            element={<PesticideRegistration />}
-          ></Route>
-          <Route path="/pesticide-sales" element={<PesticideSales />}></Route>
+          <Route path="/" element={<CompanyIntro language={language} />}></Route>
+          <Route path="/pesticide-registration" element={<PesticideRegistration language={language} />}></Route>
+          <Route path="/pesticide-sales" element={<PesticideSales language={language} />}></Route>
           <Route path="/market-survey" element={<MarketSurvey />}></Route>
           <Route path="/talks" element={<Talks />}></Route>
-          <Route
-            path="/news-and-interview"
-            element={<NewsAndInterview />}
-          ></Route>
+          <Route path="/news-and-interview" element={<NewsAndInterview />}></Route>
           <Route path="/pest-control" element={<PestControl />}></Route>
           <Route path="/online-resources" element={<OnlineResources />}></Route>
           <Route path="/contact" element={<ContactUs />}></Route>
@@ -177,11 +144,7 @@ function App() {
       </div>
       <footer>© Hanson Agrochemical Consulting® 2022</footer>
 
-      <div
-        id="overlay"
-        className={showOverlay && "active"}
-        onClick={() => setShowOverlay(false)}
-      ></div>
+      <div id="overlay" className={showOverlay && "active"} onClick={() => setShowOverlay(false)}></div>
     </BrowserRouter>
   );
 }

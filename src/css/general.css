@@ -51,6 +51,10 @@ body::-webkit-scrollbar-thumb {
   gap: 25px;
 }
 
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
 .col-8,
 .col-12,
 .col-24 {
@@ -63,6 +67,25 @@ body::-webkit-scrollbar-thumb {
 
 .mb-15 {
   margin-bottom: 15px;
+}
+
+.mr-80 {
+  margin-right: 80px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.pageBG {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 400px;
+  bottom: 0;
+  opacity: 0.5;
+  z-index: -10;
 }
 
 footer {
