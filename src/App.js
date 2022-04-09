@@ -135,7 +135,7 @@ function App() {
         </div>
       </div>
 
-      <div className={showOverlay ? "hambergurMenu active" : "hambergurMenu"}>
+      <div className={showOverlay ? "hamburgerMenu active" : "hamburgerMenu"}>
         <Link className="navBtnHumbergur" to="/" onClick={() => setShowOverlay(false)}>
           {NAV_MENU.companyIntro[language]}
         </Link>
@@ -148,10 +148,18 @@ function App() {
             <i className={shouldExpandPesticide ? "bi bi-chevron-down active" : "bi bi-chevron-down"}></i>
           </div>
           <div className="accordionItemsCtn">
-            <Link className="navBtnHumbergur" to="/pesticide-registration" onClick={() => setShowOverlay(false)}>
+            <Link
+              className={shouldExpandPesticide ? "navBtnHumbergur active" : "navBtnHumbergur"}
+              to="/pesticide-registration"
+              onClick={() => setShowOverlay(false)}
+            >
               {NAV_MENU.pesticideRegistration[language]}
             </Link>
-            <Link className="navBtnHumbergur" to="/pesticide-sales" onClick={() => setShowOverlay(false)}>
+            <Link
+              className={shouldExpandPesticide ? "navBtnHumbergur active" : "navBtnHumbergur"}
+              to="/pesticide-sales"
+              onClick={() => setShowOverlay(false)}
+            >
               {NAV_MENU.pesticideSales[language]}
             </Link>
           </div>
@@ -169,16 +177,32 @@ function App() {
             <i className={shouldExpandResource ? "bi bi-chevron-down active" : "bi bi-chevron-down"}></i>
           </div>
           <div className="accordionItemsCtn">
-            <Link className="navBtnHumbergur" to="/market-survey" onClick={() => setShowOverlay(false)}>
+            <Link
+              className={shouldExpandResource ? "navBtnHumbergur active" : "navBtnHumbergur"}
+              to="/market-survey"
+              onClick={() => setShowOverlay(false)}
+            >
               {NAV_MENU.marketSurvey[language]}
             </Link>
-            <Link className="navBtnHumbergur" to="/talks" onClick={() => setShowOverlay(false)}>
+            <Link
+              className={shouldExpandResource ? "navBtnHumbergur active" : "navBtnHumbergur"}
+              to="/talks"
+              onClick={() => setShowOverlay(false)}
+            >
               {NAV_MENU.talks[language]}
             </Link>
-            <Link className="navBtnHumbergur" to="/news-and-interview" onClick={() => setShowOverlay(false)}>
+            <Link
+              className={shouldExpandResource ? "navBtnHumbergur active" : "navBtnHumbergur"}
+              to="/news-and-interview"
+              onClick={() => setShowOverlay(false)}
+            >
               {NAV_MENU.newsAndInterview[language]}
             </Link>
-            <Link className="navBtnHumbergur" to="/online-resources" onClick={() => setShowOverlay(false)}>
+            <Link
+              className={shouldExpandResource ? "navBtnHumbergur active" : "navBtnHumbergur"}
+              to="/online-resources"
+              onClick={() => setShowOverlay(false)}
+            >
               {NAV_MENU.onlineResources[language]}
             </Link>
           </div>

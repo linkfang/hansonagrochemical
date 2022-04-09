@@ -156,7 +156,7 @@
   transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s, transform 0s ease-out;
 }
 
-.hambergurMenu {
+.hamburgerMenu {
   display: flex;
   flex-direction: column;
   width: calc(100vw - 40px);
@@ -173,18 +173,19 @@
   z-index: 20;
 }
 
-.hambergurMenu.active {
+.hamburgerMenu.active {
   top: 92px;
   transform: scale(1);
   transition: top 0.4s ease-out, transform 0s ease-out;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .navBtnHumbergur,
 .navBtnAccordion {
   cursor: pointer;
   width: calc(100% - 60px);
-  padding: 25px 30px;
+  padding: 0 30px;
   border-bottom: 2px solid hsla(165, 0%, 0%, 0.1);
   transition: all 0.25s ease-out;
 }
@@ -196,18 +197,30 @@
   transition: all 0.25s ease-out;
 }
 
-.navBtnHumbergur,
+.navBtnHumbergur {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  min-height: 65px;
+  transition: all 0.25s ease-out;
+}
+
 .navBtnAccordion {
   text-decoration: none;
   font-weight: 500;
   font-size: 18px;
-  max-height: 24px;
+  max-height: 65px;
+  min-height: 65px;
   overflow: hidden;
   transition: all 0.25s ease-out;
 }
 
 .navBtnAccordion.active {
-  max-height: 500px;
+  min-height: fit-content;
+  max-height: 400px;
+  overflow: initial;
   transition: all 0.25s ease-out;
 }
 
@@ -219,6 +232,7 @@
 .accordionTitle {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .navBtnHumbergur .bi-chevron-down,
@@ -240,12 +254,17 @@
 }
 
 .accordionItemsCtn .navBtnHumbergur {
-  padding-left: 60px;
   border: none;
-  border-top: 2px solid hsla(165, 0%, 0%, 0.1);
+  border-top: 2px solid hsla(165, 0%, 0%, 0);
   width: 100%;
   position: relative;
   left: -30px;
+  padding-left: 60px;
+}
+
+.accordionItemsCtn .navBtnHumbergur.active {
+  display: flex;
+  border-top: 2px solid hsla(165, 0%, 0%, 0.1);
 }
 
 .accordionItemsCtn .navBtnHumbergur:first-child {

@@ -8,12 +8,12 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 12px; /* width of the entire scrollbar */
   display: none;
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: hsl(165, 10%, 80%); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
   border: 3px solid #fff; /* creates padding around scroll thumb */
@@ -117,7 +117,7 @@ footer {
 }
 
 @media (min-width: 900px) {
-  body::-webkit-scrollbar {
+  ::-webkit-scrollbar {
     display: block;
   }
   .mainContent {
