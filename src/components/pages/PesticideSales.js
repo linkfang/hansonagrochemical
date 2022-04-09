@@ -1,7 +1,6 @@
 import plantBG from "../../assets/bg/plants.svg";
 import { PESTICIDE_SALES } from "../../constants/language";
 import pdfIcon from "../../assets/icons/file-earmark-pdf.svg";
-import { PDF_PATH } from "../../constants/constants";
 
 export default function PesticideSales({ language }) {
   const renderListItems = (data) =>
@@ -27,31 +26,34 @@ export default function PesticideSales({ language }) {
     });
 
   return (
-    <div className="pageCtn">
-      <img className="pageBG" src={plantBG} alt="Plant background" />
-      <div className="row">
-        <div className="titleBorderTop mr-80">
-          <div className="colorRectangle"></div>
-          {PESTICIDE_SALES.distributors.title[language]}
-        </div>
-        <div className="listCtn">{renderListItems(PESTICIDE_SALES.distributors)}</div>
-      </div>
+    <>
+      <div className="pageBG"></div>
 
-      <div className="row mt-100">
-        <div className="titleBorderTop mr-80">
-          <div className="colorRectangle"></div>
-          {PESTICIDE_SALES.partnersFromChina.title[language]}
+      <div className="pageCtn">
+        <div className="row">
+          <div className="titleBorderTop">
+            <div className="colorRectangle"></div>
+            {PESTICIDE_SALES.distributors.title[language]}
+          </div>
+          <div className="listCtn">{renderListItems(PESTICIDE_SALES.distributors)}</div>
         </div>
-        <div className="listCtn">{renderListItems(PESTICIDE_SALES.partnersFromChina)}</div>
-      </div>
 
-      <div className="row mt-100">
-        <div className="titleBorderTop mr-80">
-          <div className="colorRectangle"></div>
-          {PESTICIDE_SALES.distributedProducts.title[language]}
+        <div className="row mt-100">
+          <div className="titleBorderTop">
+            <div className="colorRectangle"></div>
+            {PESTICIDE_SALES.partnersFromChina.title[language]}
+          </div>
+          <div className="listCtn">{renderListItems(PESTICIDE_SALES.partnersFromChina)}</div>
         </div>
-        <div className="listCtn">{renderListItems(PESTICIDE_SALES.distributedProducts)}</div>
+
+        <div className="row mt-100">
+          <div className="titleBorderTop">
+            <div className="colorRectangle"></div>
+            {PESTICIDE_SALES.distributedProducts.title[language]}
+          </div>
+          <div className="listCtn">{renderListItems(PESTICIDE_SALES.distributedProducts)}</div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }

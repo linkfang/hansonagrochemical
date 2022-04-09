@@ -55,17 +55,8 @@ export const COMPANY_INTRO = {
 export const PESTICIDE_SALES = {
   distributors: {
     title: {
-      en: (
-        <h1>
-          Top Pesticide Distributors <br /> in Canada <br /> (in alphabetical order)
-        </h1>
-      ),
-      zh: (
-        <h1>
-          加拿大 <br /> 农药分销商 <br />
-          (字母顺序)
-        </h1>
-      ),
+      en: <h1>Top Pesticide Distributors in Canada (in alphabetical order)</h1>,
+      zh: <h1>加拿大农药分销商 (字母顺序)</h1>,
     },
     content: {
       en: [
@@ -106,17 +97,8 @@ export const PESTICIDE_SALES = {
   },
   partnersFromChina: {
     title: {
-      en: (
-        <h1>
-          Business Partners from China <br /> (in alphabetical order)
-        </h1>
-      ),
-      zh: (
-        <h1>
-          中国生意 <br /> 合作伙伴 <br />
-          (字母顺序)
-        </h1>
-      ),
+      en: <h1>Business Partners from China (in alphabetical order)</h1>,
+      zh: <h1>中国生意合作伙伴 (字母顺序)</h1>,
     },
     content: {
       en: [
@@ -146,17 +128,8 @@ export const PESTICIDE_SALES = {
   },
   distributedProducts: {
     title: {
-      en: (
-        <h1>
-          We are distributing <br /> the following products
-        </h1>
-      ),
-      zh: (
-        <h1>
-          正在销售产品 <br />
-          英文标签
-        </h1>
-      ),
+      en: <h1>We are distributing the following products</h1>,
+      zh: <h1>正在销售产品英文标签</h1>,
     },
     content: {
       en: [
