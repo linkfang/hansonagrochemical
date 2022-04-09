@@ -1,12 +1,24 @@
 import plantBG from "../../assets/bg/plants.svg";
 import { PESTICIDE_SALES } from "../../constants/language";
-
+import pdfIcon from "../../assets/icons/file-earmark-pdf.svg";
 export default function PesticideSales({ language }) {
-  const renderDistributors = PESTICIDE_SALES.distributors.content[language].map((item) => (
-    <p className="listItem margin-0">{item}</p>
-  ));
+  const renderListItems = (data) =>
+    data.content[language].map((item) => {
+      if (item.type === "url") {
+        return (
+          <a className="listItem margin-0" key={item.name} href="">
+            <img className="pdfIcon" src={pdfIcon} alt="PDF icon" />
+            {item.name}
+          </a>
+        );
+      }
+      return (
+        <p className="listItem margin-0" key={item.name}>
+          {item.name}
+        </p>
+      );
+    });
 
-  const renderListItems = (data) => data.content[language].map((item) => <p className="listItem margin-0">{item}</p>);
   return (
     <div className="pageCtn">
       <img className="pageBG" src={plantBG} alt="Plant background" />
@@ -24,6 +36,14 @@ export default function PesticideSales({ language }) {
           {PESTICIDE_SALES.partnersFromChina.title[language]}
         </div>
         <div className="listCtn">{renderListItems(PESTICIDE_SALES.partnersFromChina)}</div>
+      </div>
+
+      <div className="row mt-100">
+        <div className="titleBorderTop mr-80">
+          <div className="colorRectangle"></div>
+          {PESTICIDE_SALES.distributedProducts.title[language]}
+        </div>
+        <div className="listCtn">{renderListItems(PESTICIDE_SALES.distributedProducts)}</div>
       </div>
     </div>
   );

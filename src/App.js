@@ -122,8 +122,8 @@ function App() {
         </nav>
 
         <div className="hamburgerMenuIcon">
-          <i class={showOverlay ? "bi bi-list" : "bi bi-list active"} onClick={() => setShowOverlay(!showOverlay)}></i>
-          <i class={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"} onClick={() => setShowOverlay(!showOverlay)}></i>
+          <i className={showOverlay ? "bi bi-list" : "bi bi-list active"} onClick={() => setShowOverlay(!showOverlay)}></i>
+          <i className={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"} onClick={() => setShowOverlay(!showOverlay)}></i>
         </div>
       </div>
 

@@ -84,7 +84,7 @@ body::-webkit-scrollbar-thumb {
   right: 0;
   top: 400px;
   bottom: 0;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: -10;
 }
 

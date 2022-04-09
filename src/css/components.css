@@ -47,10 +47,31 @@
 }
 
 .listItem {
-  background-color: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px 16px;
   border-radius: var(--border-radius);
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  backdrop-filter: blur(8px);
   font-weight: 500;
+  transition: all 0.25s ease-out;
+}
+
+a.listItem {
+  cursor: pointer;
+  text-decoration: none;
+  color: #696969;
+}
+
+.listItem:hover {
+  color: var(--primary-color);
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 0.25s ease-out;
+}
+
+.pdfIcon {
+  margin-right: 10px;
+  width: 25px;
 }
