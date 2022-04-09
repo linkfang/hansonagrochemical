@@ -20,6 +20,8 @@ function App() {
   const [willHideResourcesSubMenu, setWillHideResourcesSubMenu] = useState("");
   const [language, setLanguage] = useState("en");
   const [showOverlay, setShowOverlay] = useState(false);
+  const [shouldExpandPesticide, setShouldExpandPesticide] = useState(false);
+  const [shouldExpandResource, setShouldExpandResource] = useState(false);
 
   const hidePesticideSubMenu = () => {
     const timer = setTimeout(() => setShowPesticideSubMenu(false), 250);
@@ -122,12 +124,69 @@ function App() {
         </nav>
 
         <div className="hamburgerMenuIcon">
-          <i className={showOverlay ? "bi bi-list" : "bi bi-list active"} onClick={() => setShowOverlay(!showOverlay)}></i>
-          <i className={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"} onClick={() => setShowOverlay(!showOverlay)}></i>
+          <i
+            className={showOverlay ? "bi bi-list" : "bi bi-list active"}
+            onClick={() => setShowOverlay(!showOverlay)}
+          ></i>
+          <i
+            className={showOverlay ? "bi bi-x-lg active" : "bi bi-x-lg"}
+            onClick={() => setShowOverlay(!showOverlay)}
+          ></i>
         </div>
       </div>
 
-      <div className={showOverlay ? "hambergurMenu active" : "hambergurMenu"}></div>
+      <div className={showOverlay ? "hambergurMenu active" : "hambergurMenu"}>
+        <Link className="navBtnHumbergur" to="/" onClick={() => setShowOverlay(false)}>
+          {NAV_MENU.companyIntro[language]}
+        </Link>
+        <div
+          className={shouldExpandPesticide ? "navBtnAccordion active margin-0" : "navBtnAccordion margin-0"}
+          onClick={() => setShouldExpandPesticide(!shouldExpandPesticide)}
+        >
+          <div className="accordionTitle">
+            {NAV_MENU.pesticide[language]}
+            <i className={shouldExpandPesticide ? "bi bi-chevron-down active" : "bi bi-chevron-down"}></i>
+          </div>
+          <div className="accordionItemsCtn">
+            <Link className="navBtnHumbergur" to="/pesticide-registration" onClick={() => setShowOverlay(false)}>
+              {NAV_MENU.pesticideRegistration[language]}
+            </Link>
+            <Link className="navBtnHumbergur" to="/pesticide-sales" onClick={() => setShowOverlay(false)}>
+              {NAV_MENU.pesticideSales[language]}
+            </Link>
+          </div>
+        </div>
+        <Link className="navBtnHumbergur" to="/pest-control" onClick={() => setShowOverlay(false)}>
+          {NAV_MENU.pestControl[language]}
+        </Link>
+
+        <div
+          className={shouldExpandResource ? "navBtnAccordion active margin-0" : "navBtnAccordion margin-0"}
+          onClick={() => setShouldExpandResource(!shouldExpandResource)}
+        >
+          <div className="accordionTitle">
+            {NAV_MENU.resources[language]}
+            <i className={shouldExpandResource ? "bi bi-chevron-down active" : "bi bi-chevron-down"}></i>
+          </div>
+          <div className="accordionItemsCtn">
+            <Link className="navBtnHumbergur" to="/market-survey" onClick={() => setShowOverlay(false)}>
+              {NAV_MENU.marketSurvey[language]}
+            </Link>
+            <Link className="navBtnHumbergur" to="/talks" onClick={() => setShowOverlay(false)}>
+              {NAV_MENU.talks[language]}
+            </Link>
+            <Link className="navBtnHumbergur" to="/news-and-interview" onClick={() => setShowOverlay(false)}>
+              {NAV_MENU.newsAndInterview[language]}
+            </Link>
+            <Link className="navBtnHumbergur" to="/online-resources" onClick={() => setShowOverlay(false)}>
+              {NAV_MENU.onlineResources[language]}
+            </Link>
+          </div>
+        </div>
+        <Link className="navBtnHumbergur" to="/contact" onClick={() => setShowOverlay(false)}>
+          {NAV_MENU.contactUs[language]}
+        </Link>
+      </div>
 
       <div className="mainContent">
         <Routes>

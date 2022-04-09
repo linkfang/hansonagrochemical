@@ -139,27 +139,26 @@
   padding: 5px 0;
   transform: scale(0);
   opacity: 0;
-  transition: top 0.4s ease-out, opacity 0.2s ease-in,
-    transform 0s ease-out 0.25s;
+  transition: top 0.4s ease-out, opacity 0.2s ease-in, transform 0s ease-out 0.25s;
 }
 
 .bi-list.active {
   animation: rotateShowUp 0.25s;
   transform: scale(1);
   opacity: 1;
-  transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s,
-    transform 0s ease-out;
+  transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s, transform 0s ease-out;
 }
 
 .bi-x-lg.active {
   animation: rotateShowUp 0.25s;
   opacity: 1;
   transform: scale(1);
-  transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s,
-    transform 0s ease-out;
+  transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s, transform 0s ease-out;
 }
 
 .hambergurMenu {
+  display: flex;
+  flex-direction: column;
   width: calc(100vw - 40px);
   height: calc(100vh - 112px);
   left: 20px;
@@ -178,6 +177,83 @@
   top: 92px;
   transform: scale(1);
   transition: top 0.4s ease-out, transform 0s ease-out;
+  overflow: hidden;
+}
+
+.navBtnHumbergur,
+.navBtnAccordion {
+  cursor: pointer;
+  width: calc(100% - 60px);
+  padding: 25px 30px;
+  border-bottom: 2px solid hsla(165, 0%, 0%, 0.1);
+  transition: all 0.25s ease-out;
+}
+
+.navBtnHumbergur:hover,
+.navBtnAccordion:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  transition: all 0.25s ease-out;
+}
+
+.navBtnHumbergur,
+.navBtnAccordion {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  max-height: 24px;
+  overflow: hidden;
+  transition: all 0.25s ease-out;
+}
+
+.navBtnAccordion.active {
+  max-height: 500px;
+  transition: all 0.25s ease-out;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navBtnHumbergur .bi-chevron-down,
+.navBtnAccordion .bi-chevron-down {
+  font-size: 16px;
+  transform: rotate(0deg);
+  transform-origin: 8px 10px;
+  transition: all 0.25s ease-out;
+}
+
+.navBtnAccordion .bi-chevron-down.active {
+  transform: rotate(180deg);
+  transition: all 0.25s ease-out;
+}
+
+.accordionItemsCtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionItemsCtn .navBtnHumbergur {
+  padding-left: 60px;
+  border: none;
+  border-top: 2px solid hsla(165, 0%, 0%, 0.1);
+  width: 100%;
+  position: relative;
+  left: -30px;
+}
+
+.accordionItemsCtn .navBtnHumbergur:first-child {
+  margin-top: 25px;
+}
+
+.accordionItemsCtn .navBtnHumbergur:last-child {
+  padding-bottom: 0;
 }
 
 @keyframes rotateShowUp {

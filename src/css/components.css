@@ -60,7 +60,6 @@
 a.listItem {
   cursor: pointer;
   text-decoration: none;
-  color: #696969;
 }
 
 .listItem:hover {
