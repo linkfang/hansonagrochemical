@@ -131,15 +131,15 @@ function App() {
 
       <div className="mainContent">
         <Routes>
-          <Route path="/" element={<CompanyIntro language={language} />}></Route>
-          <Route path="/pesticide-registration" element={<PesticideRegistration language={language} />}></Route>
-          <Route path="/pesticide-sales" element={<PesticideSales language={language} />}></Route>
-          <Route path="/market-survey" element={<MarketSurvey />}></Route>
-          <Route path="/talks" element={<Talks />}></Route>
-          <Route path="/news-and-interview" element={<NewsAndInterview />}></Route>
-          <Route path="/pest-control" element={<PestControl />}></Route>
-          <Route path="/online-resources" element={<OnlineResources />}></Route>
-          <Route path="/contact" element={<ContactUs />}></Route>
+          <Route path="/" element={<CompanyIntro language={language} />} exact></Route>
+          <Route path="/pesticide-registration" element={<PesticideRegistration language={language} />} exact></Route>
+          <Route path="/pesticide-sales" element={<PesticideSales language={language} />} exact></Route>
+          <Route path="/market-survey" element={<MarketSurvey />} exact></Route>
+          <Route path="/talks" element={<Talks />} exact></Route>
+          <Route path="/news-and-interview" element={<NewsAndInterview />} exact></Route>
+          <Route path="/pest-control" element={<PestControl />} exact></Route>
+          <Route path="/online-resources" element={<OnlineResources />} exact></Route>
+          <Route path="/contact" element={<ContactUs />} exact></Route>
         </Routes>
       </div>
       <footer>© Hanson Agrochemical Consulting® 2022</footer>
