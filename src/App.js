@@ -1,5 +1,5 @@
 import "./App.css";
-import { HashRouter , Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import CompanyIntro from "./components/pages/CompanyIntro";
 import PesticideRegistration from "./components/pages/PesticideRegistration";
 import PesticideSales from "./components/pages/PesticideSales";
@@ -32,7 +32,7 @@ function App() {
     setWillHideResourcesSubMenu(timer);
   };
   return (
-    <HashRouter  basename={window.location.hostname.includes("localhost") ? "/" : "/hansonAgrochemicalPreview/"}>
+    <HashRouter>
       <div className="banner"></div>
 
       <div className="navBarCtn displayCenter">
@@ -228,7 +228,7 @@ function App() {
       <footer>© Hanson Agrochemical Consulting® 2022</footer>
 
       <div id="overlay" className={showOverlay && "active"} onClick={() => setShowOverlay(false)}></div>
-    </HashRouter >
+    </HashRouter>
   );
 }
 
