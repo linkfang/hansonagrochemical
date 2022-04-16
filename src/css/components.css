@@ -75,7 +75,8 @@
 
 .listItemCard {
   flex-direction: column;
-  max-width: 270px;
+  flex: 1;
+  min-width: 220px;
 }
 
 .listItemCardContent {
