@@ -227,7 +227,7 @@ function App() {
       </div>
       <footer>© Hanson Agrochemical Consulting® 2022</footer>
 
-      <div id="overlay" className={showOverlay && "active"} onClick={() => setShowOverlay(false)}></div>
+      <div id="overlay" className={showOverlay ? "active" : ""} onClick={() => setShowOverlay(false)}></div>
     </HashRouter>
   );
 }
