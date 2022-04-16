@@ -4,7 +4,7 @@ export default function ListCardSection({ title, items, language, className }) {
   const renderListCardItems = (data) =>
     data.content[language].map((item) => {
       return (
-        <div className="listItem listItemCard">
+        <div key={item.title} className="listItem listItemCard">
           <p>
             <strong>{item.title}</strong>
           </p>
@@ -14,7 +14,7 @@ export default function ListCardSection({ title, items, language, className }) {
     });
 
   const renderlistCardSections = items.map((item) => (
-    <div className="cardSection mb-30">
+    <div key={item.title.en} className="cardSection mb-30">
       <p className="mt-0 mb-30 cardSectionTitle">
         <strong>{item.title[language]}</strong>
       </p>
