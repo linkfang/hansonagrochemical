@@ -4,7 +4,7 @@ export default function ListSection({ title, description, items, language, class
   const rowClassName = className || "";
   const renderListItems = (data) =>
     data.content[language].map((item) => {
-      if (item.type === "url") {
+      if (item.type === "pdf") {
         return (
           <a
             className="listItem margin-0"

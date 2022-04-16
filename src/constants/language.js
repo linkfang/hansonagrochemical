@@ -24,22 +24,22 @@ export const COMPANY_INTRO = {
     title: { en: "Vision", zh: "愿景" },
     content: {
       en: "Our vision is to bring the farmers in North America an alternative, competitive, feasible, and affordable tool, such as generic pesticides, to tackle crop protection issues, with the aim of booming agricultural industries.",
-      zh: "汉森农科Hanson AgroSciences愿景是为北美农场主提供一种替代性的、有竞争力的、切实可行的，能负担得起的植物保护工具，例如过专利的非品牌的农药，最终解决作物保护问题，促进农业产业繁荣。",
+      zh: "汉森农科Hanson AgroSciences愿景是为北美农场主提供一种替代性的、有竞争力的、切实可行的, 能负担得起的植物保护工具, 例如过专利的非品牌的农药, 最终解决作物保护问题, 促进农业产业繁荣。",
     },
   },
   aboutHanson: {
     title: { en: "About Hanson", zh: "关于汉森" },
     content1: {
       en: "Hanson AgroSciences is in Richmond, Ontario, Canada. Hanson currently has seven staff members, four of whom are responsible for product registration and three for pesticide sales. Hanson's business covers agrochemical (pesticide, PGR, fertilizer et al.) registration, agrochemical sales, crop market survey, talks, pesticide news, interviews.",
-      zh: "汉森农化咨询（Hanson Agrochemical Consulting）是隶属于汉森实业（Hanson Industry Company）的子公司，位于加拿大安大略省渥太华市。汉森（Hanson）目前有7名职员，其中4人专门负责产品登记，3人做农药销售。汉森（Hanson）的业务涵盖农化（农药肥料）产品登记、产品销售、市场调研，演讲，新闻采访等几个版块。",
+      zh: "汉森（Hanson）对北美农药登记的流程和程序，尤其是数据补偿非常精通。目前，递交50多个产品登记， 25个产品登记获得批复。汉森农化咨询以重合同、守信用、为客户负责，登记快、节省数据补偿费用而受到业界的广泛认可和高度赞誉。",
     },
     content2: {
       en: "Hanson is well versed in the processes and procedures for pesticide registration in North America, especially in data compensation. At present, 50+ pesticide registration applications have been submitted, and 25 applications have been approved by PMRA, Health Canada. Hanson Agrochemical Consulting has been widely recognized and highly praised by the industry for its commitment to contractors, being accountable to customers, registering products in a timely manner, and saving data compensation fees for applicants.",
-      zh: "汉森（Hanson）对北美农药登记的流程和程序，尤其是数据补偿非常精通。目前，递交50多个产品登记， 25个产品登记获得批复。汉森农化咨询以重合同、守信用、为客户负责，登记快、节省数据补偿费用而受到业界的广泛认可和高度赞誉。",
+      zh: "汉森（Hanson）非常重视北美产品渠道建设。目前，汉森（Hanson）已经和加拿大各大产品经销商建立了良好的战略合作关系。更为重要的是，汉森（Hanson）掌握了一大批终端农场主客户，正在践行从港口到农场的崭新理念，为产品顺利持久进入终端用户市场铺平了道路。",
     },
     content3: {
       en: "Hanson attaches great importance to the construction of North American product sales channels. At present, Hanson has established a good strategic partnership with major distributors in Canada. More importantly, Hanson has mastered many terminal farmer customers and is practicing a new concept from port to farm, paving the way for smooth and sustainable entry into the end-user market. Since Nov. 2021 (up to April 6, 2022), our revenue has reached 30 million Canadian dollars.",
-      zh: "汉森（Hanson）非常重视北美产品渠道建设。目前，汉森（Hanson）已经和加拿大各大产品经销商建立了良好的战略合作关系。更为重要的是，汉森（Hanson）掌握了一大批终端农场主客户，正在践行从港口到农场的崭新理念，为产品顺利持久进入终端用户市场铺平了道路。自 2021 年 11 月（截至 2022 年 4 月 6 日）以来，我们的收入已达到 3,000 万加元。",
+      zh: "",
     },
     content4: {
       en: "Hanson AgroSciences is your dependable partner in the agchem business!",
@@ -522,18 +522,18 @@ export const PESTICIDE_SALES = {
     },
     content: {
       en: [
-        { name: "NASA 36 (Glyphosate 360)", type: "url", url: "nasa36.pdf" },
-        { name: "FREEDOM GLYPHOSATE POTASSIUM SALT 540 LIQUID HERBICIDE", type: "url", url: "freedom-glyphosate.pdf" },
-        { name: "Lier Glufosinate 150 SN", type: "", url: "" },
-        { name: "FOISON Glufosinate Ammonium 200 SN", type: "url", url: "foison-glufosinate-ammonium.pdf" },
-        { name: "Brassinolide 0.01%", type: "url", url: "brassinolide.pdf" },
+        { name: "NASA 36 (Glyphosate 360)", type: "pdf", url: "nasa36.pdf" },
+        { name: "FREEDOM GLYPHOSATE POTASSIUM SALT 540 LIQUID HERBICIDE", type: "pdf", url: "freedom-glyphosate.pdf" },
+        { name: "Lier Glufosinate 150 SN", type: "pdf", url: "lier-glufosinate-150-sn-english-label.pdf" },
+        { name: "FOISON Glufosinate Ammonium 200 SN", type: "pdf", url: "foison-glufosinate-ammonium.pdf" },
+        { name: "Brassinolide 0.01%", type: "pdf", url: "brassinolide.pdf" },
       ],
       zh: [
-        { name: "NASA 36 (Glyphosate 360)", type: "url", url: "nasa36.pdf" },
-        { name: "FREEDOM GLYPHOSATE POTASSIUM SALT 540 LIQUID HERBICIDE", type: "url", url: "freedom-glyphosate.pdf" },
-        { name: "Lier Glufosinate 150 SN", type: "url", url: "foison-glufosinate-ammonium.pdf" },
-        { name: "FOISON Glufosinate Ammonium 200 SN", type: "", url: "" },
-        { name: "芸苔素内酯 0.01%", type: "url", url: "brassinolide.pdf" },
+        { name: "NASA 36 (Glyphosate 360)", type: "pdf", url: "nasa36.pdf" },
+        { name: "FREEDOM GLYPHOSATE POTASSIUM SALT 540 LIQUID HERBICIDE", type: "pdf", url: "freedom-glyphosate.pdf" },
+        { name: "Lier Glufosinate 150 SN", type: "pdf", url: "foison-glufosinate-ammonium.pdf" },
+        { name: "FOISON Glufosinate Ammonium 200 SN", type: "pdf", url: "lier-glufosinate-150-sn-english-label.pdf" },
+        { name: "芸苔素内酯 0.01%", type: "pdf", url: "brassinolide.pdf" },
       ],
     },
   },

@@ -22,7 +22,9 @@ export default function CompanyIntro({ language }) {
           <h1>{COMPANY_INTRO.aboutHanson.title[language]}</h1>
           <p className="margin-0 mb-15">{COMPANY_INTRO.aboutHanson.content1[language]}</p>
           <p className="margin-0 mb-15">{COMPANY_INTRO.aboutHanson.content2[language]}</p>
-          <p className="margin-0 mb-15">{COMPANY_INTRO.aboutHanson.content3[language]}</p>
+          {COMPANY_INTRO.aboutHanson.content3[language] && (
+            <p className="margin-0 mb-15">{COMPANY_INTRO.aboutHanson.content3[language]}</p>
+          )}
           <p className="margin-0 mb-15">
             <strong>{COMPANY_INTRO.aboutHanson.content4[language]}</strong>
           </p>
