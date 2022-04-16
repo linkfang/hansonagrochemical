@@ -58,16 +58,19 @@ export const PESTICIDE_REGISTRATION = {
     description: {
       en: (
         <span>
-          Hanson AgroSciences have got following products registered at PMRA, Health Canada. You are welcome to go to
-          PMRA website (
-          <a href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php">https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php</a>) to
-          download the labels.
+          Hanson AgroSciences have got following products registered at PMRA, Health Canada. You are welcome to go to{" "}
+          <a className="primaryColor" href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php">
+            PMRA website
+          </a>{" "}
+          to download the labels.
         </span>
       ),
       zh: (
         <span>
-          Hanson AgroSciences 已在加拿大卫生部 PMRA 注册了以下产品。欢迎您前往 PMRA 网站 (
-          <a href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php">https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php</a>)
+          Hanson AgroSciences 已在加拿大卫生部 PMRA 注册了以下产品。欢迎您前往{" "}
+          <a className="primaryColor" href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php">
+            PMRA 网站
+          </a>{" "}
           下载标签。
         </span>
       ),
