@@ -605,3 +605,76 @@ export const MARKET_SURVEY = {
     ],
   },
 };
+
+export const TALKS = {
+  title: {
+    en: "Talks",
+    zh: "演讲",
+  },
+  description: {
+    en: "As an invited speaker, I presented on global pesticide market in USA, Canada, Mexico, and China. I share the following PPT slides here.",
+    zh: "作为特邀演讲嘉宾，在中国、加拿大、美国、墨西哥等重要植物保护会议上，分析了全球作物保护市场，已经中国农药出口形势。",
+  },
+  content: {
+    en: [
+      {
+        name: "Review on the global crop protection market, CAC Online, March 15, 2022 ",
+        type: "pdf",
+        url: "the-global-agrochemical-market.pdf",
+      },
+      {
+        name: "Crop Industry and Crop Protection Business in Canada, Ottawa, March 9, 2021",
+        type: "pdf",
+        url: "crop-industry-and-crop-protection-business-in-canada.pdf",
+      },
+      {
+        name: "Crop Protection Market in Canada - Sino-Canada Crop Protection Seminar at CAC, 2020",
+        type: "pdf",
+        url: "crop-protection-market-in-canada.pdf",
+      },
+      {
+        name: "A talk at the 3rd China-Canada Crop Protection Conference, Toronto, July 24, 2019, cohosted with CCPIT-chem",
+        type: "",
+        url: "",
+      },
+      {
+        name: `A talk on "Global Plant Biotechnology Review" at Biology Department, Carleton University, Ottawa, Ontario on November 27, 2019 `,
+        type: "pdf",
+        url: "overview-on-crop-protection.pdf",
+      },
+      {
+        name: "How China-made pesticides reshape crop protection market in Latin America? In Mexico City on May 18, 2019 ",
+        type: "pdf",
+        url: "how-does-chinese-pesticide-export-reshape-crop-protection-market-in-latin-america.pdf",
+      },
+    ],
+    zh: [
+      {
+        name: "2022年3月15日, 接受CCPIT 邀请，做了《全球作物保护市场概览》演讲",
+        type: "pdf",
+        url: "the-global-agrochemical-market.pdf",
+      },
+      {
+        name: "2021年3月9日, 网上做了《加拿大农业与作物保护市场》演讲",
+        type: "pdf",
+        url: "crop-industry-and-crop-protection-business-in-canada.pdf",
+      },
+      {
+        name: "2020年在中加植保论坛上, 做《加拿大植物保护市场概览》",
+        type: "pdf",
+        url: "crop-protection-market-in-canada.pdf",
+      },
+      { name: "2019年7月13日在第三届中加植保论坛上, 做《加拿大农业和植保市场》演讲", type: "", url: "" },
+      {
+        name: "2019年11月27日, 在卡尔顿大学生物系, 给大三学生做《全球植物生物科技综述》演讲",
+        type: "pdf",
+        url: "overview-on-crop-protection.pdf",
+      },
+      {
+        name: "2019年5月18日, 在墨西哥成做了《中国农药出口对南美植保市场的影响》演讲",
+        type: "pdf",
+        url: "how-does-chinese-pesticide-export-reshape-crop-protection-market-in-latin-america.pdf",
+      },
+    ],
+  },
+};
