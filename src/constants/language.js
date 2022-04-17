@@ -8,7 +8,7 @@ export const NAV_MENU = {
   marketSurvey: { en: "Market Survey", zh: "市场调研" },
   talks: { en: "Talks at Conferences", zh: "会议演讲" },
   newsAndInterview: { en: "News and Interview", zh: "新闻专访" },
-  onlineResources: { en: "Online Resources", zh: "网上植保资源" },
+  onlineResources: { en: "Info Sources for Crop Protection ", zh: "植保资源" },
   contactUs: { en: "Contac Us", zh: "联系我们" },
 };
 
@@ -634,8 +634,8 @@ export const TALKS = {
       },
       {
         name: "A talk at the 3rd China-Canada Crop Protection Conference, Toronto, July 24, 2019, cohosted with CCPIT-chem",
-        type: "",
-        url: "",
+        type: "pdf",
+        url: "crop-protection-market-and-product-registration-in-canada_ shuyou-han_ 20190620-v2.pdf",
       },
       {
         name: `A talk on "Global Plant Biotechnology Review" at Biology Department, Carleton University, Ottawa, Ontario on November 27, 2019 `,
@@ -664,7 +664,11 @@ export const TALKS = {
         type: "pdf",
         url: "crop-protection-market-in-canada.pdf",
       },
-      { name: "2019年7月13日在第三届中加植保论坛上, 做《加拿大农业和植保市场》演讲", type: "", url: "" },
+      {
+        name: "2019年7月13日在第三届中加植保论坛上, 做《加拿大农业和植保市场》演讲",
+        type: "pdf",
+        url: "crop-protection-market-and-product-registration-in-canada_ shuyou-han_ 20190620-v2.pdf",
+      },
       {
         name: "2019年11月27日, 在卡尔顿大学生物系, 给大三学生做《全球植物生物科技综述》演讲",
         type: "pdf",
@@ -831,6 +835,316 @@ export const NEWS = {
         name: "Promising future for GM crops in China (2012)",
         type: "",
         url: "",
+      },
+    ],
+  },
+};
+
+export const INFO_SOURCES = {
+  productRegistration: {
+    title: {
+      en: "Product Registration",
+      zh: "产品登记",
+    },
+    content: {
+      en: [
+        {
+          name: "USEPA",
+          type: "html",
+          url: "https://www.epa.gov/pesticides",
+        },
+        {
+          name: "PMRA",
+          type: "html",
+          url: "https://www.canada.ca/en/health-canada/corporate/about-health-canada/branches-agencies/pest-management-regulatory-agency.html",
+        },
+        {
+          name: "ICAMA",
+          type: "html",
+          url: "http://www.chinapesticide.org.cn/ywb/index.jhtml",
+        },
+      ],
+      zh: [
+        {
+          name: "USEPA",
+          type: "html",
+          url: "https://www.epa.gov/pesticides",
+        },
+        {
+          name: "PMRA",
+          type: "html",
+          url: "https://www.canada.ca/en/health-canada/corporate/about-health-canada/branches-agencies/pest-management-regulatory-agency.html",
+        },
+        {
+          name: "ICAMA",
+          type: "html",
+          url: "http://www.chinapesticide.org.cn/ywb/index.jhtml",
+        },
+      ],
+    },
+  },
+  cropProtectionMarket: {
+    title: {
+      en: "Crop Protection Market",
+      zh: "植保市场",
+    },
+    content: {
+      en: [
+        {
+          name: "Phillips McDougall, IHS Markit",
+          type: "html",
+          url: "https://phillipsmcdougall.agribusiness.ihsmarkit.com/",
+        },
+        {
+          name: "AgBioInvestor",
+          type: "html",
+          url: "https://agbioinvestor.com/",
+        },
+        {
+          name: "Crop Science, IHS Markit/S&P Global",
+          type: "html",
+          url: "https://connect.ihsmarkit.com/agribusiness/crop-science/dashboard/home",
+        },
+      ],
+      zh: [
+        {
+          name: "Phillips McDougall, IHS Markit",
+          type: "html",
+          url: "https://phillipsmcdougall.agribusiness.ihsmarkit.com/",
+        },
+        {
+          name: "AgBioInvestor",
+          type: "html",
+          url: "https://agbioinvestor.com/",
+        },
+        {
+          name: "Crop Science, IHS Markit/S&P Global",
+          type: "html",
+          url: "https://connect.ihsmarkit.com/agribusiness/crop-science/dashboard/home",
+        },
+      ],
+    },
+  },
+  resistanceManagement: {
+    title: {
+      en: "Resistance Management",
+      zh: "抗性治理",
+    },
+    content: {
+      en: [
+        {
+          name: "IRAC The Insecticide Resistance Action Committee",
+          type: "html",
+          url: "https://irac-online.org/",
+        },
+        {
+          name: "FRAC The Fungicide Resistance Action Committee",
+          type: "html",
+          url: "https://www.frac.info/",
+        },
+        {
+          name: "HRAC The Global Herbicide Resistance Action Committee",
+          type: "html",
+          url: "https://www.hracglobal.com/",
+        },
+      ],
+      zh: [
+        {
+          name: "IRAC The Insecticide Resistance Action Committee",
+          type: "html",
+          url: "https://irac-online.org/",
+        },
+        {
+          name: "FRAC The Fungicide Resistance Action Committee",
+          type: "html",
+          url: "https://www.frac.info/",
+        },
+        {
+          name: "HRAC The Global Herbicide Resistance Action Committee",
+          type: "html",
+          url: "https://www.hracglobal.com/",
+        },
+      ],
+    },
+  },
+  pesticideIndustry: {
+    title: {
+      en: "Pesticide Industry",
+      zh: "农药工业",
+    },
+    content: {
+      en: [
+        {
+          name: "Chinese Pesticide Information Network",
+          type: "html",
+          url: "http://www.chinapesticide.org.cn/fwb/index.jhtml",
+        },
+        {
+          name: "CCPIA",
+          type: "html",
+          url: "http://www.ccpia.com.cn/",
+        },
+        {
+          name: "CCPIT",
+          type: "html",
+          url: "http://www.ccpitchem.org.cn/",
+        },
+        {
+          name: "CropLife",
+          type: "html",
+          url: "https://www.croplife.com/",
+        },
+      ],
+      zh: [
+        {
+          name: "中国农药信息网",
+          type: "html",
+          url: "http://www.chinapesticide.org.cn/fwb/index.jhtml",
+        },
+        {
+          name: "中国农药工业网",
+          type: "html",
+          url: "http://www.ccpia.com.cn/",
+        },
+        {
+          name: "中国国际贸易促进委员会化工行业分会",
+          type: "html",
+          url: "http://www.ccpitchem.org.cn/",
+        },
+        {
+          name: "CropLife",
+          type: "html",
+          url: "https://www.croplife.com/",
+        },
+      ],
+    },
+  },
+  pesticideResearch: {
+    title: {
+      en: "Pesticide Research",
+      zh: "农药研究",
+    },
+    content: {
+      en: [
+        {
+          name: "IUPAC International Union of Pure and Applied Chemistry",
+          type: "html",
+          url: "https://iupac.org/",
+        },
+        {
+          name: "PAN Pesticide Action Network",
+          type: "html",
+          url: "https://pan-international.org/",
+        },
+        {
+          name: "Alanwood",
+          type: "html",
+          url: "http://alanwood.net/",
+        },
+        {
+          name: "Agranova",
+          type: "html",
+          url: "http://www.agranova.co.uk/",
+        },
+        {
+          name: "Arthropod Management Tests",
+          type: "html",
+          url: "https://entomology.ces.ncsu.edu/2016/05/arthropod-management-tests/",
+        },
+        {
+          name: "Plant Management Network Plant Disease Management Reports",
+          type: "html",
+          url: "https://www.plantmanagementnetwork.org/pub/trial/pdmr/",
+        },
+        {
+          name: "Western Society Weed Science",
+          type: "html",
+          url: "https://www.wsweedscience.org/",
+        },
+        {
+          name: "IR4 Project",
+          type: "html",
+          url: "https://www.ir4project.org/",
+        },
+        {
+          name: "The International Service for the Acquisition of Agri-biotech Applications (ISAAA)",
+          type: "html",
+          url: "https://www.isaaa.org/",
+        },
+      ],
+      zh: [
+        {
+          name: "IUPAC International Union of Pure and Applied Chemistry",
+          type: "html",
+          url: "https://iupac.org/",
+        },
+        {
+          name: "PAN Pesticide Action Network",
+          type: "html",
+          url: "https://pan-international.org/",
+        },
+        {
+          name: "Alanwood",
+          type: "html",
+          url: "http://alanwood.net/",
+        },
+        {
+          name: "Agranova",
+          type: "html",
+          url: "http://www.agranova.co.uk/",
+        },
+        {
+          name: "Arthropod Management Tests",
+          type: "html",
+          url: "https://entomology.ces.ncsu.edu/2016/05/arthropod-management-tests/",
+        },
+        {
+          name: "Plant Management Network Plant Disease Management Reports",
+          type: "html",
+          url: "https://www.plantmanagementnetwork.org/pub/trial/pdmr/",
+        },
+        {
+          name: "Western Society Weed Science",
+          type: "html",
+          url: "https://www.wsweedscience.org/",
+        },
+        {
+          name: "IR4 Project",
+          type: "html",
+          url: "https://www.ir4project.org/",
+        },
+        {
+          name: "The International Service for the Acquisition of Agri-biotech Applications (ISAAA)",
+          type: "html",
+          url: "https://www.isaaa.org/",
+        },
+      ],
+    },
+  },
+};
+
+export const PEST_CONTROL = {
+  title: {
+    en: "Yard and Garden Pest Control",
+    zh: "庭院植保",
+  },
+  content: {
+    en: [],
+    zh: [
+      {
+        name: "植物保护产品介绍",
+        type: "pdf",
+        url: "plant-protection.pdf",
+      },
+      {
+        name: "除草技术问答",
+        type: "pdf",
+        url: "herbicides-q&a.pdf",
+      },
+      {
+        name: "植物保护群友问题思考答录",
+        type: "pdf",
+        url: "plant-pretection-group-talk.pdf",
       },
     ],
   },

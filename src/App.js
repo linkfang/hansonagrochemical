@@ -72,11 +72,13 @@ function App() {
               </div>
             </div>
 
-            <div className="navBtnCtn">
-              <Link className="navBtn" to="/pest-control">
-                {NAV_MENU.pestControl[language]}
-              </Link>
-            </div>
+            {language === "zh" && (
+              <div className="navBtnCtn">
+                <Link className="navBtn" to="/pest-control">
+                  {NAV_MENU.pestControl[language]}
+                </Link>
+              </div>
+            )}
 
             <div className="navBtnCtn">
               <a
@@ -103,7 +105,7 @@ function App() {
                 <Link className="navBtn" to="/news-and-interview">
                   {NAV_MENU.newsAndInterview[language]}
                 </Link>
-                <Link className="navBtn" to="/online-resources">
+                <Link className="navBtn" to="/info-sources">
                   {NAV_MENU.onlineResources[language]}
                 </Link>
               </div>
@@ -164,9 +166,11 @@ function App() {
             </Link>
           </div>
         </div>
-        <Link className="navBtnHumbergur" to="/pest-control" onClick={() => setShowOverlay(false)}>
-          {NAV_MENU.pestControl[language]}
-        </Link>
+        {language === "zh" && (
+          <Link className="navBtnHumbergur" to="/pest-control" onClick={() => setShowOverlay(false)}>
+            {NAV_MENU.pestControl[language]}
+          </Link>
+        )}
 
         <div
           className={shouldExpandResource ? "navBtnAccordion active margin-0" : "navBtnAccordion margin-0"}
@@ -200,7 +204,7 @@ function App() {
             </Link>
             <Link
               className={shouldExpandResource ? "navBtnHumbergur active" : "navBtnHumbergur"}
-              to="/online-resources"
+              to="/info-sources"
               onClick={() => setShowOverlay(false)}
             >
               {NAV_MENU.onlineResources[language]}
@@ -221,7 +225,7 @@ function App() {
           <Route path="/talks" element={<Talks language={language} />} exact></Route>
           <Route path="/news-and-interview" element={<NewsAndInterview language={language} />} exact></Route>
           <Route path="/pest-control" element={<PestControl language={language} />} exact></Route>
-          <Route path="/online-resources" element={<OnlineResources language={language} />} exact></Route>
+          <Route path="/info-sources" element={<OnlineResources language={language} />} exact></Route>
           <Route path="/contact" element={<ContactUs language={language} />} exact></Route>
         </Routes>
       </div>
