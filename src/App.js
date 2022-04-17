@@ -217,7 +217,7 @@ function App() {
           <Route path="/" element={<CompanyIntro language={language} />} exact></Route>
           <Route path="/pesticide-registration" element={<PesticideRegistration language={language} />} exact></Route>
           <Route path="/pesticide-sales" element={<PesticideSales language={language} />} exact></Route>
-          <Route path="/market-survey" element={<MarketSurvey />} exact></Route>
+          <Route path="/market-survey" element={<MarketSurvey language={language} />} exact></Route>
           <Route path="/talks" element={<Talks />} exact></Route>
           <Route path="/news-and-interview" element={<NewsAndInterview />} exact></Route>
           <Route path="/pest-control" element={<PestControl />} exact></Route>

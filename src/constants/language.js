@@ -529,10 +529,10 @@ export const PESTICIDE_SALES = {
         { name: "Brassinolide 0.01%", type: "pdf", url: "brassinolide.pdf" },
       ],
       zh: [
-        { name: "NASA 36 (Glyphosate 360)", type: "pdf", url: "nasa36.pdf" },
-        { name: "FREEDOM GLYPHOSATE POTASSIUM SALT 540 LIQUID HERBICIDE", type: "pdf", url: "freedom-glyphosate.pdf" },
-        { name: "Lier Glufosinate 150 SN", type: "pdf", url: "foison-glufosinate-ammonium.pdf" },
-        { name: "FOISON Glufosinate Ammonium 200 SN", type: "pdf", url: "lier-glufosinate-150-sn-english-label.pdf" },
+        { name: "草甘膦 360 g/L", type: "pdf", url: "nasa36.pdf" },
+        { name: "草甘膦 540K", type: "pdf", url: "freedom-glyphosate.pdf" },
+        { name: "草铵膦 150 SN", type: "pdf", url: "foison-glufosinate-ammonium.pdf" },
+        { name: "草铵膦 200 SN", type: "pdf", url: "lier-glufosinate-150-sn-english-label.pdf" },
         { name: "芸苔素内酯 0.01%", type: "pdf", url: "brassinolide.pdf" },
       ],
     },
@@ -540,5 +540,68 @@ export const PESTICIDE_SALES = {
   summary: {
     en: "Hanson AgroSciences sell both technical and formulations of glyphosate, glufosinate, s-metolachlor, boscalid, florasulam, bentazon, prothioconazole, clethodim, flucarbazone, tebuconazole, and metalaxyl et al, we can also source hundreds of active ingredients for you from China and India.",
     zh: "汉森农科销售以下产品的原药和制剂，比如草甘膦、草铵膦、精异丙甲草胺、啶酰菌胺、双氟磺草胺、苯达松、丙硫菌唑、烯草酮、氟唑磺隆、戊唑醇、甲霜灵等。我们可以从中国和印度采购上百种有效成分。",
+  },
+};
+
+export const MARKET_SURVEY = {
+  title: {
+    en: "Market Research",
+    zh: "市场调研",
+  },
+  description: {
+    en: "Being a consultant at Phillips McDougall, AgBioInvestor, AgBioScout, I interact with other crop protection professionals regularly. I published the following crop protection market report as follows. ",
+    zh: "作为Phillips McDougall, AgBioInvestor, AgBioScout 等国际知名公司的顾问, 和全球其他植保专家保持密切沟通。每季度撰写全球作物生物科技观察, 撰写和出版了《草铵膦全球生产和市场分析》、在英国出版了《中国、加拿大、美国、越南、泰国植保产品登记综述》和《中国农药30强》。",
+  },
+  content: {
+    en: [
+      {
+        name: "Plant Biotechnology Patent Watch Annual Review, Crop Science Market Reporting | S&P Global - (yearly)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Plant Biotechnology Patent Watch, Crop Science Market Reporting | S&P Global - (quarterly)",
+        type: "",
+        url: "",
+      },
+      { name: "Agrow Report: Global Production and Market Analysis of Glufosinate ammonium 2019", type: "", url: "" },
+      { name: "Agrow Report: US Pesticide Product Registration Overview 2018", type: "", url: "" },
+      { name: "Agrow Report: Top Chinese Crop Protection Companies 2018", type: "", url: "" },
+      {
+        name: "AG-Top-Chinese-Crop-Protection-Companies-2018-REPORT, Shuyou Han 0415[1842]",
+        type: "pdf",
+        url: "ag-top-chinese-crop-protection-companies-2018-report.pdf",
+      },
+      { name: "Agrow Report: Thailand Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: China Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: Canada Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: Viet Nam Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: China Top 30 Companies (2016)", type: "", url: "" },
+    ],
+    zh: [
+      {
+        name: "Plant Biotechnology Patent Watch Annual Review, Crop Science Market Reporting | S&P Global - (yearly)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Plant Biotechnology Patent Watch, Crop Science Market Reporting | S&P Global - (quarterly)",
+        type: "",
+        url: "",
+      },
+      { name: "Agrow Report: Global Production and Market Analysis of Glufosinate ammonium 2019", type: "", url: "" },
+      { name: "Agrow Report: US Pesticide Product Registration Overview 2018", type: "", url: "" },
+      { name: "Agrow Report: Top Chinese Crop Protection Companies 2018", type: "", url: "" },
+      {
+        name: "AG-Top-Chinese-Crop-Protection-Companies-2018-REPORT, Shuyou Han 0415[1842]",
+        type: "pdf",
+        url: "ag-top-chinese-crop-protection-companies-2018-report.pdf",
+      },
+      { name: "Agrow Report: Thailand Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: China Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: Canada Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: Viet Nam Pesticide Product Registration Overview 2017", type: "", url: "" },
+      { name: "Agrow Report: China Top 30 Companies (2016)", type: "", url: "" },
+    ],
   },
 };
