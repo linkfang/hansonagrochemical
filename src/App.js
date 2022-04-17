@@ -219,10 +219,10 @@ function App() {
           <Route path="/pesticide-sales" element={<PesticideSales language={language} />} exact></Route>
           <Route path="/market-survey" element={<MarketSurvey language={language} />} exact></Route>
           <Route path="/talks" element={<Talks language={language} />} exact></Route>
-          <Route path="/news-and-interview" element={<NewsAndInterview />} exact></Route>
-          <Route path="/pest-control" element={<PestControl />} exact></Route>
-          <Route path="/online-resources" element={<OnlineResources />} exact></Route>
-          <Route path="/contact" element={<ContactUs />} exact></Route>
+          <Route path="/news-and-interview" element={<NewsAndInterview language={language} />} exact></Route>
+          <Route path="/pest-control" element={<PestControl language={language} />} exact></Route>
+          <Route path="/online-resources" element={<OnlineResources language={language} />} exact></Route>
+          <Route path="/contact" element={<ContactUs language={language} />} exact></Route>
         </Routes>
       </div>
       <footer>© Hanson Agrochemical Consulting® 2022</footer>

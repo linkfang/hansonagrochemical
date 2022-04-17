@@ -678,3 +678,160 @@ export const TALKS = {
     ],
   },
 };
+
+export const NEWS = {
+  title: {
+    en: "News and Interview",
+    zh: "新闻采访",
+  },
+  description: {
+    en: "As a correspondent at Crop Science (Agrow formerly), HIS Markit/S&P Global, I interviewed the Sinochem, ICAMA (The Institute for the Control of Agrochemicals under the Ministry of Agriculture), CCPIA (China Crop Protection Industry Association), and made news on China’s pesticide industry regularly.",
+    zh: "作为英国《作物科学》杂志记者，我采访了沈阳化工研究院刘长令博士、中国农业农村部农药检定所所长、和中国农药工业协会孙叔宝博士、浙江新安董事长、成都新朝阳董事长等，附上了部分专访文稿。",
+  },
+  content: {
+    en: [
+      {
+        name: "China's pesticide exports in 2020 will be lower than the past (2020)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "China is a Powerhouse of New Pesticide Discovery and Plant Biotechnology (2020)",
+        type: "",
+        url: "",
+      },
+      {
+        name: `Interview Chengdu New Sun pursues "green" agriculture in China (2019)`,
+        type: "pdf",
+        url: "chengdu-new-sun-pursues-green-agriculture-in-china.pdf",
+      },
+      {
+        name: "Strategies on Penetrating Canadian Crop Protection Market (2019)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "China's top 100 agchem company sales up 12% in 2018 (2019)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Interview Wynca: Consolidation in Chinese industry will reduce glyphosate price wars (2018)",
+        type: "pdf",
+        url: "interview-wynca-consolidation-in-chinese-industry-will-reduce-glyphosate-price-wars.pdf",
+      },
+      {
+        name: "Sinochem/Syngenta agree fungicide R&D deal (2017)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Interview Dr. Changling Liu: A Chinese perspective on agchem R&D",
+        type: "pdf",
+        url: "a-chinese-prespective-on-agchem-r&d.pdf",
+      },
+      {
+        name: "Interview CCPIA: Chinese industry confident about 2017 (2016)",
+        type: "pdf",
+        url: "interview-chinese-industry-confident-about-2017.pdf",
+      },
+      {
+        name: "Interview ICAMA: China establishes new pesticide regulations",
+        type: "pdf",
+        url: "china-establishes-new-pesticide-regulations.pdf",
+      },
+      {
+        name: "Chinese pesticide exports up in 2013 (2014)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Biopesticide development in China (2013)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Patented agrochemicals invented by Chinese researchers (2013)",
+        type: "pdf",
+        url: "patented-agrochemicals-invented-by-chinese-researchers.pdf",
+      },
+      {
+        name: "Promising future for GM crops in China (2012)",
+        type: "",
+        url: "",
+      },
+    ],
+    zh: [
+      {
+        name: "China's pesticide exports in 2020 will be lower than the past (2020)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "China is a Powerhouse of New Pesticide Discovery and Plant Biotechnology (2020)",
+        type: "",
+        url: "",
+      },
+      {
+        name: `Interview Chengdu New Sun pursues "green" agriculture in China (2019)`,
+        type: "pdf",
+        url: "chengdu-new-sun-pursues-green-agriculture-in-china.pdf",
+      },
+      {
+        name: "Strategies on Penetrating Canadian Crop Protection Market (2019)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "China's top 100 agchem company sales up 12% in 2018 (2019)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Interview Wynca: Consolidation in Chinese industry will reduce glyphosate price wars (2018)",
+        type: "pdf",
+        url: "interview-wynca-consolidation-in-chinese-industry-will-reduce-glyphosate-price-wars.pdf",
+      },
+      {
+        name: "Sinochem/Syngenta agree fungicide R&D deal (2017)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Interview Dr. Changling Liu: A Chinese perspective on agchem R&D",
+        type: "pdf",
+        url: "a-chinese-prespective-on-agchem-r&d.pdf",
+      },
+      {
+        name: "Interview CCPIA: Chinese industry confident about 2017 (2016)",
+        type: "pdf",
+        url: "interview-chinese-industry-confident-about-2017.pdf",
+      },
+      {
+        name: "Interview ICAMA: China establishes new pesticide regulations",
+        type: "pdf",
+        url: "china-establishes-new-pesticide-regulations.pdf",
+      },
+      {
+        name: "Chinese pesticide exports up in 2013 (2014)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Biopesticide development in China (2013)",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Patented agrochemicals invented by Chinese researchers (2013)",
+        type: "pdf",
+        url: "patented-agrochemicals-invented-by-chinese-researchers.pdf",
+      },
+      {
+        name: "Promising future for GM crops in China (2012)",
+        type: "",
+        url: "",
+      },
+    ],
+  },
+};

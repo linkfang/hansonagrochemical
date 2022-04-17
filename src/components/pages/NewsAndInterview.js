@@ -1,7 +1,16 @@
-export default function NewsAndInterview() {
+import { NEWS } from "../../constants/language";
+import ListSection from "../UI/ListSection";
+
+export default function NewsAndInterview({ language }) {
   return (
     <div className="pageCtn">
-      <h1>News and Interview</h1>
+      <div className="pageBG"></div>
+      <ListSection
+        title={NEWS.title[language]}
+        description={NEWS.description[language]}
+        items={NEWS}
+        language={language}
+      />
     </div>
   );
 }

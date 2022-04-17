@@ -99,7 +99,7 @@ a.listItem {
 
 .pdfIcon {
   margin-right: 10px;
-  width: 25px;
+  min-width: 25px;
 }
 
 @media (min-width: 1100px) {
