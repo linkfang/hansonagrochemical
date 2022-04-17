@@ -4,7 +4,7 @@ import ListSection from "../UI/ListSection";
 export default function OnlineResources({ language }) {
   return (
     <div className="pageCtn">
-      <div className="pageBG"></div>
+      <div className="pageBGResources"></div>
       <ListSection
         title={INFO_SOURCES.productRegistration.title[language]}
         items={INFO_SOURCES.productRegistration}

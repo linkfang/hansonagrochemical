@@ -89,10 +89,12 @@ body {
   margin-top: 100px;
 }
 
-.pageBG {
+.pageBG,
+.pageBGResources,
+.pageBGContact {
   background-image: url("../assets/bg/plants.svg");
   background-size: cover;
-  opacity: 0.25;
+  opacity: 0.2;
   filter: saturate(1.5);
   z-index: -10;
   position: fixed;
@@ -100,6 +102,14 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+.pageBGResources {
+  background-image: url("../assets/bg/resources.svg");
+}
+
+.pageBGContact {
+  background-image: url("../assets/bg/contact-us.svg");
 }
 
 footer {

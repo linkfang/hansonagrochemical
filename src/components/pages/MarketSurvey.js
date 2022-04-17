@@ -4,7 +4,7 @@ import ListSection from "../UI/ListSection";
 export default function MarketSurvey({ language }) {
   return (
     <div className="pageCtn">
-      <div className="pageBG"></div>
+      <div className="pageBGResources"></div>
       <ListSection
         title={MARKET_SURVEY.title[language]}
         description={MARKET_SURVEY.description[language]}
