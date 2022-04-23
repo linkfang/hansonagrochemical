@@ -13,7 +13,7 @@ export default function ListCardSection({ title, items, language, className }) {
       );
     });
 
-  const renderlistCardSections = items.map((item) => (
+  const renderListCardSections = items.map((item) => (
     <div key={item.title.en} className="cardSection mb-30">
       <p className="mt-0 mb-30 cardSectionTitle">
         <strong>{item.title[language]}</strong>
@@ -27,7 +27,7 @@ export default function ListCardSection({ title, items, language, className }) {
         <div className="colorRectangle"></div>
         <h1>{title}</h1>
       </div>
-      <div className="listCtn">{renderlistCardSections}</div>
+      <div className="listCtn">{renderListCardSections}</div>
     </div>
   );
 }

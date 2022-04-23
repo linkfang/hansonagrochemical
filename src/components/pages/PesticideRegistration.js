@@ -15,7 +15,6 @@ export default function PesticideRegistration({ language }) {
           items={PESTICIDE_REGISTRATION.pesticidesPMRA}
           language={language}
         />
-        {/* need to add new compoent/style for this section */}
         <ListCardSection
           title={PESTICIDE_REGISTRATION.promisingPesticides.title[language]}
           items={PESTICIDE_REGISTRATION.promisingPesticides.subSections}
