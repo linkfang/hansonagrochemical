@@ -37,7 +37,8 @@
 }
 
 .banner {
-  background-size: 100% auto;
+  background-size: cover;
+  background-position: center;
   height: 350px;
   width: 100vw;
   background-repeat: no-repeat;
@@ -45,27 +46,22 @@
 
 .home {
   background-image: url("../assets/banners/home.jpg");
-  background-position: 0 10%;
 }
 
 .pesticide {
   background-image: url("../assets/banners/pesticide.jpg");
-  background-position: 0 45%;
 }
 
 .pestControl {
   background-image: url("../assets/banners/pest-control.jpg");
-  background-position: 0 35%;
 }
 
 .resources {
   background-image: url("../assets/banners/resources.jpg");
-  background-position: 0 70%;
 }
 
 .contact {
   background-image: url("../assets/banners/contact.jpg");
-  background-position: 0 48%;
 }
 
 .navBarCtn {
@@ -359,24 +355,33 @@
     display: none;
   }
 
+  .banner {
+    background-size: 100%;
+  }
+
   .home {
     animation: bannerHome 2.5s ease-out;
+    background-position: 0 10%;
   }
 
   .pesticide {
     animation: bannerPesticide 2.5s ease-out;
+    background-position: 0 45%;
   }
 
   .pestControl {
     animation: bannerPesticide 2.5s ease-out;
+    background-position: 0 35%;
   }
 
   .resources {
     animation: bannerResources 2.5s ease-out;
+    background-position: 0 70%;
   }
 
   .contact {
     animation: bannerContact 2.5s ease-out;
+    background-position: 0 48%;
   }
 }
 
