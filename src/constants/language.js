@@ -9,7 +9,7 @@ export const NAV_MENU = {
   talks: { en: "Talks at Conferences", zh: "会议演讲" },
   newsAndInterview: { en: "News and Interview", zh: "新闻专访" },
   onlineResources: { en: "Info Sources for Crop Protection ", zh: "植保资源" },
-  contactUs: { en: "Contac Us", zh: "联系我们" },
+  contactUs: { en: "Contact Us", zh: "联系我们" },
 };
 
 export const COMPANY_INTRO = {
