@@ -2,8 +2,13 @@ import missionIcon from "../../assets/icons/bullseye.svg";
 import visionIcon from "../../assets/icons/vision.svg";
 import aboutIcon from "../../assets/icons/about.svg";
 import { COMPANY_INTRO } from "../../constants/language";
+import { useEffect } from "react";
 
-export default function CompanyIntro({ language }) {
+export default function CompanyIntro({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("home");
+  }, [setBannerImg]);
+
   return (
     <div className="pageCtn">
       <div className="row">

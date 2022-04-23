@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { PEST_CONTROL } from "../../constants/language";
 import ListSection from "../UI/ListSection";
 
-export default function PestControl({ language }) {
+export default function PestControl({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("pestControl");
+  }, [setBannerImg]);
   return (
     <div className="pageCtn">
       <div className="pageBG"></div>

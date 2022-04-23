@@ -1,11 +1,76 @@
 @import url("./variables.css");
 
+@keyframes bannerHome {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes bannerPesticide {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes bannerResources {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes bannerContact {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
 .banner {
-  background-image: url("../assets/banners/colza.jpg");
-  background-position: 0 20%;
-  background-size: cover;
-  height: 310px;
+  background-size: 100% auto;
+  height: 350px;
   width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.home {
+  background-image: url("../assets/banners/home.jpg");
+  background-position: 0 10%;
+  animation: bannerHome 2.5s ease-out;
+}
+
+.pesticide {
+  background-image: url("../assets/banners/pesticide.jpg");
+  background-position: 0 45%;
+  animation: bannerPesticide 2.5s ease-out;
+}
+
+.pestControl {
+  background-image: url("../assets/banners/pest-control.jpg");
+  background-position: 0 35%;
+  animation: bannerPesticide 2.5s ease-out;
+}
+
+.resources {
+  background-image: url("../assets/banners/resources.jpg");
+  background-position: 0 70%;
+  animation: bannerResources 2.5s ease-out;
+}
+
+.contact {
+  background-image: url("../assets/banners/contact.jpg");
+  background-position: 0 48%;
+  animation: bannerContact 2.5s ease-out;
 }
 
 .navBarCtn {

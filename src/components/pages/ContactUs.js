@@ -1,7 +1,12 @@
 import weChatIcon from "../../assets/icons/wechat.svg";
 import ContactUsIcon from "../../assets/icons/contact-us.svg";
+import { useEffect } from "react";
 
-export default function ContactUs() {
+export default function ContactUs({ setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("contact");
+  }, [setBannerImg]);
+
   return (
     <div className="pageCtn contactPageCtn">
       <div className="pageBGContact"></div>
@@ -26,11 +31,11 @@ export default function ContactUs() {
             <i className="bi bi-skype"></i>
             <p>hanshuyoucan</p>
           </div>
-          <a className="contactItem" target='_blank' href="https://twitter.com/ShuyouHan">
+          <a className="contactItem" target="_blank" href="https://twitter.com/ShuyouHan">
             <i className="bi bi-twitter"></i>
             <p>ShuyouHan</p>
           </a>
-          <a className="contactItem" target='_blank' href="https://www.linkedin.com/in/shuyou-han-30b47853/">
+          <a className="contactItem" target="_blank" href="https://www.linkedin.com/in/shuyou-han-30b47853/">
             <i className="bi bi-linkedin"></i>
             <p>Shuyou Han</p>
           </a>

@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: calc(100vh - 310px);
+  min-height: calc(100vh - 350px);
 }
 
 .pageCtn {

@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { TALKS } from "../../constants/language";
 import ListSection from "../UI/ListSection";
 
-export default function Talks({language}) {
+export default function Talks({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("resources");
+  }, [setBannerImg]);
   return (
     <div className="pageCtn">
       <div className="pageBGResources"></div>

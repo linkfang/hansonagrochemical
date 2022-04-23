@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { NEWS } from "../../constants/language";
 import ListSection from "../UI/ListSection";
 
-export default function NewsAndInterview({ language }) {
+export default function NewsAndInterview({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("resources");
+  }, [setBannerImg]);
   return (
     <div className="pageCtn">
       <div className="pageBGResources"></div>

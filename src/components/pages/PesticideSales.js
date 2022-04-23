@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import { PESTICIDE_SALES } from "../../constants/language";
 import ListSection from "../UI/ListSection";
 
-export default function PesticideSales({ language }) {
+export default function PesticideSales({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("pesticide");
+  }, [setBannerImg]);
+
   return (
     <>
       <div className="pageBG"></div>

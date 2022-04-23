@@ -3,8 +3,13 @@ import ListCardSection from "../UI/ListCardSection";
 import ListSection from "../UI/ListSection";
 import plantVideo from "../../assets/videos/plant-video.mp4";
 import pesticideInCanada from "../../assets/videos/pesticide-in-canada.mp4";
+import { useEffect } from "react";
 
-export default function PesticideRegistration({ language }) {
+export default function PesticideRegistration({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("pesticide");
+  }, [setBannerImg]);
+
   return (
     <>
       <div className="pageBG"></div>

@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { INFO_SOURCES } from "../../constants/language";
 import ListSection from "../UI/ListSection";
 
-export default function OnlineResources({ language }) {
+export default function OnlineResources({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("resources");
+  }, [setBannerImg]);
   return (
     <div className="pageCtn">
       <div className="pageBGResources"></div>

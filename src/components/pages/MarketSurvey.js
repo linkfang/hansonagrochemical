@@ -1,7 +1,12 @@
-import { MARKET_SURVEY, PESTICIDE_SALES } from "../../constants/language";
+import { useEffect } from "react";
+import { MARKET_SURVEY } from "../../constants/language";
 import ListSection from "../UI/ListSection";
 
-export default function MarketSurvey({ language }) {
+export default function MarketSurvey({ language, setBannerImg }) {
+  useEffect(() => {
+    setBannerImg("resources");
+  }, [setBannerImg]);
+
   return (
     <div className="pageCtn">
       <div className="pageBGResources"></div>

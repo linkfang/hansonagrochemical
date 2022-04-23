@@ -22,6 +22,7 @@ function App() {
   const [showOverlay, setShowOverlay] = useState(false);
   const [shouldExpandPesticide, setShouldExpandPesticide] = useState(false);
   const [shouldExpandResource, setShouldExpandResource] = useState(false);
+  const [bannerImg, setBannerImg] = useState("home");
 
   const hidePesticideSubMenu = () => {
     const timer = setTimeout(() => setShowPesticideSubMenu(false), 250);
@@ -33,7 +34,7 @@ function App() {
   };
   return (
     <HashRouter>
-      <div className="banner"></div>
+      <div className={`banner ${bannerImg}`}></div>
 
       <div className="navBarCtn displayCenter">
         <div className="navBarCtnBlur"></div>
@@ -218,15 +219,39 @@ function App() {
 
       <div className="mainContent">
         <Routes>
-          <Route path="/" element={<CompanyIntro language={language} />} exact></Route>
-          <Route path="/pesticide-registration" element={<PesticideRegistration language={language} />} exact></Route>
-          <Route path="/pesticide-sales" element={<PesticideSales language={language} />} exact></Route>
-          <Route path="/market-survey" element={<MarketSurvey language={language} />} exact></Route>
-          <Route path="/talks" element={<Talks language={language} />} exact></Route>
-          <Route path="/news-and-interview" element={<NewsAndInterview language={language} />} exact></Route>
-          <Route path="/pest-control" element={<PestControl language={language} />} exact></Route>
-          <Route path="/info-sources" element={<OnlineResources language={language} />} exact></Route>
-          <Route path="/contact" element={<ContactUs language={language} />} exact></Route>
+          <Route path="/" element={<CompanyIntro language={language} setBannerImg={setBannerImg} />} exact></Route>
+          <Route
+            path="/pesticide-registration"
+            element={<PesticideRegistration language={language} setBannerImg={setBannerImg} />}
+            exact
+          ></Route>
+          <Route
+            path="/pesticide-sales"
+            element={<PesticideSales language={language} setBannerImg={setBannerImg} />}
+            exact
+          ></Route>
+          <Route
+            path="/market-survey"
+            element={<MarketSurvey language={language} setBannerImg={setBannerImg} />}
+            exact
+          ></Route>
+          <Route path="/talks" element={<Talks language={language} setBannerImg={setBannerImg} />} exact></Route>
+          <Route
+            path="/news-and-interview"
+            element={<NewsAndInterview language={language} setBannerImg={setBannerImg} />}
+            exact
+          ></Route>
+          <Route
+            path="/pest-control"
+            element={<PestControl language={language} setBannerImg={setBannerImg} />}
+            exact
+          ></Route>
+          <Route
+            path="/info-sources"
+            element={<OnlineResources language={language} setBannerImg={setBannerImg} />}
+            exact
+          ></Route>
+          <Route path="/contact" element={<ContactUs language={language} setBannerImg={setBannerImg} />} exact></Route>
         </Routes>
       </div>
       <footer>© Hanson Agrochemical Consulting® 2022</footer>
