@@ -1,0 +1,185 @@
+@import url("./variables.css");
+
+html {
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(165, 10%, 80%); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #fff; /* creates padding around scroll thumb */
+}
+
+.bi {
+  font-size: 12px;
+}
+
+.primaryColor {
+  color: var(--primary-color);
+}
+
+.displayCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.mainContent {
+  width: calc(100vw - 40px);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: calc(100vh - 350px);
+}
+
+.pageCtn {
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 80px 0 120px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.rowReverse {
+  flex-direction: row-reverse;
+}
+
+.col-8,
+.col-12,
+.col-24 {
+  width: 100%;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mr-80 {
+  margin-right: 80px;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+.pageBG,
+.pageBGResources,
+.pageBGContact {
+  background-image: url("../assets/bg/plants.svg");
+  background-size: cover;
+  opacity: 0.2;
+  filter: saturate(1.5);
+  z-index: -10;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pageBGResources {
+  background-image: url("../assets/bg/resources.svg");
+}
+
+.pageBGContact {
+  background-image: url("../assets/bg/contact-us.svg");
+}
+
+footer {
+  position: relative;
+  height: 0;
+  bottom: 45px;
+  text-align: center;
+  color: rgb(186, 186, 186);
+}
+
+#overlay.active {
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color 0.4s ease-out, transform 0s linear;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0);
+  transform: scale(0);
+  z-index: 10;
+  transition: background-color 0.4s ease-out, transform 0s ease-out 0.4s;
+}
+
+@media (min-width: 900px) {
+  ::-webkit-scrollbar {
+    display: block;
+  }
+  .mainContent {
+    width: calc(100vw - 90px);
+    padding: 0 45px;
+  }
+  .col-8 {
+    width: 20%;
+  }
+
+  .col-12 {
+    width: 38%;
+  }
+
+  .col-24 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navBarCtn {
+    width: calc(100vw - 120px);
+    padding: 0 60px;
+  }
+
+  .mainContent {
+    width: calc(100vw - 120px);
+    padding: 0 60px;
+  }
+
+  .col-8 {
+    width: 25%;
+  }
+
+  .col-12 {
+    width: 42%;
+  }
+
+  .col-24 {
+    width: 100%;
+  }
+}

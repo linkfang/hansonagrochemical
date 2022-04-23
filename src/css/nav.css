@@ -1,0 +1,393 @@
+@import url("./variables.css");
+
+@keyframes bannerHome {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes bannerPesticide {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes bannerResources {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes bannerContact {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 350px;
+  width: 100vw;
+  background-repeat: no-repeat;
+}
+
+.home {
+  background-image: url("../assets/banners/home.jpg");
+}
+
+.pesticide {
+  background-image: url("../assets/banners/pesticide.jpg");
+}
+
+.pestControl {
+  background-image: url("../assets/banners/pest-control.jpg");
+}
+
+.resources {
+  background-image: url("../assets/banners/resources.jpg");
+}
+
+.contact {
+  background-image: url("../assets/banners/contact.jpg");
+}
+
+.navBarCtn {
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 40px);
+  padding: 0 20px;
+  height: 72px;
+  z-index: 100;
+}
+
+.navBarCtnBlur {
+  background-color: var(--primary-white-bg-color);
+  backdrop-filter: var(--primary-blur);
+  position: fixed;
+  top: 0;
+  height: 72px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+}
+
+.navBar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+  max-width: var(--max-content-width);
+  width: 100%;
+}
+
+.logo {
+  width: 90px;
+}
+
+.navItems {
+  display: none;
+  position: absolute;
+  flex: 1;
+  justify-content: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.navBtnCtn {
+  height: 100%;
+}
+.navBtn {
+  cursor: pointer;
+  font-size: 14px;
+  margin: 0 15px;
+  padding: 5px;
+  text-decoration: none;
+  color: rgb(105, 105, 105);
+  font-weight: 500;
+  border-bottom: 3px solid hsla(165, 40%, 36%, 0);
+  transition: all 0.25s ease-out;
+}
+
+.navBtn:hover {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  transition: all 0.25s ease-in;
+}
+
+.bi-chevron-down {
+  margin-left: 2px;
+}
+
+.subMenu {
+  padding: 20px 10px;
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  backdrop-filter: var(--primary-blur);
+  background-color: var(--primary-white-bg-color);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.25s ease-out;
+}
+
+.subMenu a {
+  margin: 5px 15px;
+}
+
+.langSwitchCtn {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.langSwitchCtn p {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.langSwitchCtn p:hover {
+  color: var(--primary-color);
+  transition: all 0.25s ease-in;
+}
+
+.hide {
+  transform: scale(0);
+  opacity: 0;
+  transition: opacity 0.25s ease-out, transform 0s ease-out 0.25s;
+}
+
+.hamburgerMenuIcon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  left: 20px;
+  height: 100%;
+}
+
+.hamburgerMenuIcon i {
+  position: absolute;
+  cursor: pointer;
+  font-size: 24px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  transform: scale(0);
+  opacity: 0;
+  transition: top 0.4s ease-out, opacity 0.2s ease-in, transform 0s ease-out 0.25s;
+}
+
+.bi-list.active {
+  animation: rotateShowUp 0.25s;
+  transform: scale(1);
+  opacity: 1;
+  transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s, transform 0s ease-out;
+}
+
+.bi-x-lg.active {
+  animation: rotateShowUp 0.25s;
+  opacity: 1;
+  transform: scale(1);
+  transition: top 0.4s ease-out, opacity 0.3s ease-out 0.05s, transform 0s ease-out;
+}
+
+.hamburgerMenu {
+  display: flex;
+  flex-direction: column;
+  width: calc(100vw - 40px);
+  height: calc(100vh - 112px);
+  left: 20px;
+  right: 20px;
+  border-radius: var(--border-radius);
+  top: -99vh;
+  position: fixed;
+  background-color: var(--primary-white-bg-color);
+  backdrop-filter: var(--primary-blur);
+  transform: scale(0);
+  transition: top 0.4s ease-out, transform 0s ease-out 0.25s;
+  z-index: 20;
+}
+
+.hamburgerMenu.active {
+  top: 92px;
+  transform: scale(1);
+  transition: top 0.4s ease-out, transform 0s ease-out;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.navBtnHumbergur,
+.navBtnAccordion {
+  cursor: pointer;
+  width: calc(100% - 60px);
+  padding: 0 30px;
+  border-bottom: 2px solid hsla(165, 0%, 0%, 0.1);
+  transition: all 0.25s ease-out;
+}
+
+.navBtnHumbergur:hover,
+.navBtnAccordion:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+  transition: all 0.25s ease-out;
+}
+
+.navBtnHumbergur {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  min-height: 65px;
+  transition: all 0.25s ease-out;
+}
+
+.navBtnAccordion {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  max-height: 65px;
+  min-height: 65px;
+  overflow: hidden;
+  transition: all 0.25s ease-out;
+}
+
+.navBtnAccordion.active {
+  min-height: fit-content;
+  max-height: 400px;
+  overflow: initial;
+  transition: all 0.25s ease-out;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navBtnHumbergur .bi-chevron-down,
+.navBtnAccordion .bi-chevron-down {
+  font-size: 16px;
+  transform: rotate(0deg);
+  transform-origin: 8px 10px;
+  transition: all 0.25s ease-out;
+}
+
+.navBtnAccordion .bi-chevron-down.active {
+  transform: rotate(180deg);
+  transition: all 0.25s ease-out;
+}
+
+.accordionItemsCtn {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordionItemsCtn .navBtnHumbergur {
+  border: none;
+  border-top: 2px solid hsla(165, 0%, 0%, 0);
+  width: 100%;
+  position: relative;
+  left: -30px;
+  padding-left: 60px;
+}
+
+.accordionItemsCtn .navBtnHumbergur.active {
+  display: flex;
+  border-top: 2px solid hsla(165, 0%, 0%, 0.1);
+}
+
+.accordionItemsCtn .navBtnHumbergur:first-child {
+  margin-top: 25px;
+}
+
+.accordionItemsCtn .navBtnHumbergur:last-child {
+  padding-bottom: 0;
+}
+
+@keyframes rotateShowUp {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@media (min-width: 900px) {
+  .navBar {
+    justify-content: flex-start;
+  }
+  .navItems {
+    display: flex;
+  }
+  .navBarCtn {
+    width: calc(100vw - 90px);
+    padding: 0 45px;
+  }
+  .hamburgerMenuIcon {
+    display: none;
+  }
+
+  .banner {
+    background-size: 100%;
+  }
+
+  .home {
+    animation: bannerHome 2.5s ease-out;
+    background-position: 0 10%;
+  }
+
+  .pesticide {
+    animation: bannerPesticide 2.5s ease-out;
+    background-position: 0 45%;
+  }
+
+  .pestControl {
+    animation: bannerPesticide 2.5s ease-out;
+    background-position: 0 35%;
+  }
+
+  .resources {
+    animation: bannerResources 2.5s ease-out;
+    background-position: 0 70%;
+  }
+
+  .contact {
+    animation: bannerContact 2.5s ease-out;
+    background-position: 0 48%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navBarCtn {
+    width: calc(100vw - 120px);
+    padding: 0 60px;
+  }
+}

@@ -1,0 +1,9 @@
+@import url("./css/general.css");
+@import url("./css/nav.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url("./css/components.css");
+
+html,
+a {
+  color: #656565;
+}
