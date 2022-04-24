@@ -39,7 +39,9 @@ function App() {
       <div className="navBarCtn displayCenter">
         <div className="navBarCtnBlur"></div>
         <nav className="navBar">
-          <img className="logo" src={logo} alt="Hanson Agrochemical Consulting logo" />
+          <Link className="logoCtn" to="/">
+            <img className="logo" src={logo} alt="Hanson Agrochemical Consulting logo" />
+          </Link>
           <div className="navItems">
             <div className="navBtnCtn">
               <Link className="navBtn" to="/">
