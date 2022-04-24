@@ -124,7 +124,7 @@ export const PESTICIDE_REGISTRATION = {
     title: { en: "Promising Pesticides in Canada (m$, 2020)", zh: "加拿大有前景的产品 (2020年市场数据, 百万美元）" },
     subSections: [
       {
-        title: { en: "Herbicides her (By Value in order of market value)", zh: "除草剂 (以市场价值为序)" },
+        title: { en: "Herbicides by Value", zh: "除草剂 (以市场价值为序)" },
         content: {
           en: [
             {
@@ -264,7 +264,7 @@ export const PESTICIDE_REGISTRATION = {
         },
       },
       {
-        title: { en: "Insecticides (By Value in order of market value)", zh: "杀虫剂 (以市场价值为序)" },
+        title: { en: "Insecticides by Value", zh: "杀虫剂 (以市场价值为序)" },
         content: {
           en: [
             {
@@ -297,7 +297,7 @@ export const PESTICIDE_REGISTRATION = {
         },
       },
       {
-        title: { en: "Fungicide (By Value in order of market value)", zh: "杀菌剂 （以市场价值为序）" },
+        title: { en: "Fungicides by Value", zh: "杀菌剂 （以市场价值为序）" },
         content: {
           en: [
             {
