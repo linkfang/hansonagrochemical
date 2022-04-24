@@ -18,6 +18,15 @@
   }
 }
 
+@keyframes bannerPestControl {
+  0% {
+    background-size: 105%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
 @keyframes bannerResources {
   0% {
     background-size: 105%;
@@ -376,7 +385,7 @@
   }
 
   .pestControl {
-    animation: bannerPesticide 2.5s ease-out;
+    animation: bannerPestControl 2.5s ease-out;
     background-position: 0 35%;
   }
 
