@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.787a014d.css",
-    "main.js": "/static/js/main.40d30d90.js",
+    "main.js": "/static/js/main.195135cf.js",
     "static/js/787.162a034d.chunk.js": "/static/js/787.162a034d.chunk.js",
     "static/media/plant-video.mp4": "/static/media/plant-video.d10d807bebae5f5a0107.mp4",
     "static/media/pesticide-in-canada.mp4": "/static/media/pesticide-in-canada.a7be050a3cb15bc8c5f0.mp4",
@@ -12,8 +12,8 @@
     "static/media/overview-on-crop-protection.pdf": "/static/media/overview-on-crop-protection.af8815c2f5a5985d8e44.pdf",
     "static/media/crop-industry-and-crop-protection-business-in-canada.pdf": "/static/media/crop-industry-and-crop-protection-business-in-canada.0160e7e36d900d112d21.pdf",
     "static/media/crop-protection-market-and-product-registration-in-canada_ shuyou-han_ 20190620-v2.pdf": "/static/media/crop-protection-market-and-product-registration-in-canada_ shuyou-han_ 20190620-v2.bc12c4e72913332b0e58.pdf",
-    "static/media/plant-protection.pdf": "/static/media/plant-protection.1e8ec3932fde624b47ac.pdf",
     "static/media/freedom-glyphosate.pdf": "/static/media/freedom-glyphosate.87d10199438159abab39.pdf",
+    "static/media/plant-protection.pdf": "/static/media/plant-protection.f465467891a2a813bd83.pdf",
     "static/media/brassinolide.pdf": "/static/media/brassinolide.f4f22dbd96e0fad54258.pdf",
     "static/media/plant-pretection-group-talk.pdf": "/static/media/plant-pretection-group-talk.2734f7a50ff383aaaa3c.pdf",
     "static/media/nasa36.pdf": "/static/media/nasa36.24cc9ca83c436fa8f482.pdf",
@@ -43,11 +43,11 @@
     "static/media/about.svg": "/static/media/about.760d58cae47778eb0d7eec441d1f5f07.svg",
     "static/media/bullseye.svg": "/static/media/bullseye.4f4276683b17d3f8b68da0785d9ca9c3.svg",
     "main.787a014d.css.map": "/static/css/main.787a014d.css.map",
-    "main.40d30d90.js.map": "/static/js/main.40d30d90.js.map",
+    "main.195135cf.js.map": "/static/js/main.195135cf.js.map",
     "787.162a034d.chunk.js.map": "/static/js/787.162a034d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.787a014d.css",
-    "static/js/main.40d30d90.js"
+    "static/js/main.195135cf.js"
   ]
 }
