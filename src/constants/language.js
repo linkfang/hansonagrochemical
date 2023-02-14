@@ -54,12 +54,19 @@ export const COMPANY_INTRO = {
 
 export const PESTICIDE_REGISTRATION = {
   pesticidesPMRA: {
-    title: { en: "List of Registered Pesticides at PMRA ", zh: "在PMRA取得登记产品列表" },
+    title: {
+      en: "List of Registered Pesticides at PMRA ",
+      zh: "在PMRA取得登记产品列表",
+    },
     description: {
       en: (
         <span>
-          Hanson AgroSciences have got following products registered at PMRA, Health Canada. You are welcome to go to{" "}
-          <a className="primaryColor" href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php">
+          Hanson AgroSciences have got following products registered at PMRA,
+          Health Canada. You are welcome to go to{" "}
+          <a
+            className="primaryColor"
+            href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php"
+          >
             PMRA website
           </a>{" "}
           to download the labels.
@@ -68,7 +75,10 @@ export const PESTICIDE_REGISTRATION = {
       zh: (
         <span>
           Hanson AgroSciences 已在加拿大卫生部 PMRA 注册了以下产品。欢迎您前往{" "}
-          <a className="primaryColor" href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php">
+          <a
+            className="primaryColor"
+            href="https://pr-rp.hc-sc.gc.ca/ls-re/index-eng.php"
+          >
             PMRA 网站
           </a>{" "}
           下载标签。
@@ -78,7 +88,9 @@ export const PESTICIDE_REGISTRATION = {
     content: {
       en: [
         { name: "Glyphosate technical (registration #: 33555, 33655)" },
-        { name: "Glufosinate ammonium technical (registration #:32786, 33136, 33484, 33487, 33531, 33797, 34437)" },
+        {
+          name: "Glufosinate ammonium technical (registration #:32786, 33136, 33484, 33487, 33531, 33797, 34437)",
+        },
         { name: "Pinoxaden technical (registration #: 34060)" },
         { name: "Diquat technical (registration #:33895)" },
         { name: "Cloquintecet-mexyl technical (registration #: 34198)" },
@@ -92,14 +104,18 @@ export const PESTICIDE_REGISTRATION = {
         { name: "Glyphosate 540 K (registration #: 33976) " },
         { name: "Glyphosate IPA 41% SL (registration #: 33882) " },
         { name: "Glufosinate ammonium 150 SN (registration #: 34269, 34467)" },
-        { name: "Glufosinate ammonium 200 SN (registration #: 33386, 33999, 33500) " },
+        {
+          name: "Glufosinate ammonium 200 SN (registration #: 33386, 33999, 33500) ",
+        },
         {
           name: "More popular generic products, such as pinoxaden, clethodim, diquat, clopyralid, pyraclostrobin, tebuconazole, will be available soon in Canada.",
         },
       ],
       zh: [
         { name: "草甘膦 原药（注册号：33555、33655）" },
-        { name: "草铵膦 原药（注册号：32786、33136、33484、33487、33531、33797、34437）" },
+        {
+          name: "草铵膦 原药（注册号：32786、33136、33484、33487、33531、33797、34437）",
+        },
         { name: "唑啉草酯 原药（注册号：34060）" },
         { name: "敌草快 原药（注册号：33895）" },
         { name: "解草喹 原药（注册号：34198）" },
@@ -121,7 +137,10 @@ export const PESTICIDE_REGISTRATION = {
     },
   },
   promisingPesticides: {
-    title: { en: "Promising Pesticides in Canada (m$, 2020)", zh: "加拿大有前景的产品 (2020年市场数据, 百万美元）" },
+    title: {
+      en: "Promising Pesticides in Canada (m$, 2020)",
+      zh: "加拿大有前景的产品 (2020年市场数据, 百万美元）",
+    },
     subSections: [
       {
         title: { en: "Herbicides by Value", zh: "除草剂 (以市场价值为序)" },
@@ -216,7 +235,8 @@ export const PESTICIDE_REGISTRATION = {
             },
             {
               title: "唑啉草酯Pinoxaden",
-              content: "原药容量385吨, 市值1.8亿美元。世界第一大市场。原药登记无数据补偿。",
+              content:
+                "原药容量385吨, 市值1.8亿美元。世界第一大市场。原药登记无数据补偿。",
             },
             {
               title: "草铵膦Glufosinate",
@@ -225,40 +245,66 @@ export const PESTICIDE_REGISTRATION = {
             },
             {
               title: "甲氧磺草胺Pyroxsulam",
-              content: "原药容量 32吨, 市值 5,000万美元。世界第二大市场。登记有数据补偿。",
+              content:
+                "原药容量 32吨, 市值 5,000万美元。世界第二大市场。登记有数据补偿。",
             },
             {
               title: "氟唑磺隆Flucarbazone",
-              content: "原药容量 33吨, 市值 4,100万美元。世界第一大市场。登记有数据补偿。",
+              content:
+                "原药容量 33吨, 市值 4,100万美元。世界第一大市场。登记有数据补偿。",
             },
             {
               title: "氯氟吡氧乙酸 Fluroxypyr",
-              content: "原药容量588吨, 市值 3,440万美元。世界第二大市场。原药登记有数据补偿。",
+              content:
+                "原药容量588吨, 市值 3,440万美元。世界第二大市场。原药登记有数据补偿。",
             },
             {
               title: "甲氧咪草烟 Imazamox",
-              content: "原药容量 32吨, 市值 1905万美元。世界第五大市场。登记有数据补偿。用于ClearField 油菜。",
+              content:
+                "原药容量 32吨, 市值 1905万美元。世界第五大市场。登记有数据补偿。用于ClearField 油菜。",
             },
             {
               title: "双氟磺草胺Florasulam",
-              content: "原药容量 137吨, 市值 1837万美元。世界第二大市场。原药登记无数据补偿。",
+              content:
+                "原药容量 137吨, 市值 1837万美元。世界第二大市场。原药登记无数据补偿。",
             },
-            { title: "烯草酮Clethodim", content: "原药容量100吨, 市值1630万美元。世界第4大市场。原药登记有少量补偿。" },
-            { title: "溴苯腈Bromoxynil", content: "原药容量 570吨, 市值1,514万美元。世界第二大市场。登记有数据补偿。" },
+            {
+              title: "烯草酮Clethodim",
+              content:
+                "原药容量100吨, 市值1630万美元。世界第4大市场。原药登记有少量补偿。",
+            },
+            {
+              title: "溴苯腈Bromoxynil",
+              content:
+                "原药容量 570吨, 市值1,514万美元。世界第二大市场。登记有数据补偿。",
+            },
             {
               title: "炔草酯Clodinafop-propargyl",
-              content: "原药容量 78吨, 市值 1143万美元。世界第四大市场。登记有数据补偿。",
+              content:
+                "原药容量 78吨, 市值 1143万美元。世界第四大市场。登记有数据补偿。",
             },
-            { title: "精异丙甲草胺s-metolachlor", content: "原药容量 336吨, 市值 765万美元。原药登记无数据补偿。" },
+            {
+              title: "精异丙甲草胺s-metolachlor",
+              content: "原药容量 336吨, 市值 765万美元。原药登记无数据补偿。",
+            },
             {
               title: "苯达松 Bentazone",
-              content: "原药容量220吨, 市值430万美元。世界第七大市场。原药登记无数据补偿。",
+              content:
+                "原药容量220吨, 市值430万美元。世界第七大市场。原药登记无数据补偿。",
             },
-            { title: "敌草快 Diquat", content: "原药容量96吨, 市值 450万美元。世界第六大市场。原药登记无数据补偿。" },
-            { title: "2,4-D", content: "市场容量为776万美元, 折合原药540吨。 产品有数据补偿。" },
+            {
+              title: "敌草快 Diquat",
+              content:
+                "原药容量96吨, 市值 450万美元。世界第六大市场。原药登记无数据补偿。",
+            },
+            {
+              title: "2,4-D",
+              content: "市场容量为776万美元, 折合原药540吨。 产品有数据补偿。",
+            },
             {
               title: "氟磺胺草醚 Fomesafen",
-              content: "原药容量 20吨, 市值 222万美元。世界第五大市场。登记有数据补偿。",
+              content:
+                "原药容量 20吨, 市值 222万美元。世界第五大市场。登记有数据补偿。",
             },
           ],
         },
@@ -286,13 +332,18 @@ export const PESTICIDE_REGISTRATION = {
           zh: [
             {
               title: "高效氯氟氰菊酯 (功夫) Beta-cyhalothrin",
-              content: "原药容量95 吨，市值 5,840万美元。世界第二大市场。登记有数据补偿。",
+              content:
+                "原药容量95 吨，市值 5,840万美元。世界第二大市场。登记有数据补偿。",
             },
             {
               title: "噻虫嗪 thiamethoxam",
-              content: "原药容量 57吨, 市值 2,500万美元。世界第四大市场。原药登记有数据补偿。",
+              content:
+                "原药容量 57吨, 市值 2,500万美元。世界第四大市场。原药登记有数据补偿。",
             },
-            { title: "吡虫啉 imidacloprid", content: "原药容量 16吨, 市值 218万美元。原药登记有数据补偿。" },
+            {
+              title: "吡虫啉 imidacloprid",
+              content: "原药容量 16吨, 市值 218万美元。原药登记有数据补偿。",
+            },
           ],
         },
       },
@@ -334,40 +385,58 @@ export const PESTICIDE_REGISTRATION = {
           zh: [
             {
               title: "丙硫菌唑 Prothioconazole",
-              content: "原药容量 395吨, 市值 7,885万美元。世界第二大市场。原药登记无数据补偿。",
+              content:
+                "原药容量 395吨, 市值 7,885万美元。世界第二大市场。原药登记无数据补偿。",
             },
             {
               title: "戊唑醇Tebuconazole",
-              content: "原药容量 645吨, 市值 4,875万美元。世界第三大市场。原药登记有数据补偿。",
+              content:
+                "原药容量 645吨, 市值 4,875万美元。世界第三大市场。原药登记有数据补偿。",
             },
             {
               title: "吡唑醚菌酯Pyraclostrobin",
-              content: "原药容量155吨, 市值2,216万美元。世界第五大市场。原药登记无数据补偿。制剂数据补偿合理。",
+              content:
+                "原药容量155吨, 市值2,216万美元。世界第五大市场。原药登记无数据补偿。制剂数据补偿合理。",
             },
             {
               title: "啶酰菌胺 Boscalid",
-              content: "原药容量 273吨, 市值 2,121万美元。世界第 二大市场。原药登记无数据补偿。",
+              content:
+                "原药容量 273吨, 市值 2,121万美元。世界第 二大市场。原药登记无数据补偿。",
             },
-            { title: "甲霜灵 metalaxyl", content: "原药容量 72吨, 市值 1,700万美元。世界第三大市场。登记有数据补偿。" },
-            { title: "嘧菌酯 Azoxystrobin", content: "原药容量 185吨, 市值 1,450万美元。原药登记无数据补偿。" },
+            {
+              title: "甲霜灵 metalaxyl",
+              content:
+                "原药容量 72吨, 市值 1,700万美元。世界第三大市场。登记有数据补偿。",
+            },
+            {
+              title: "嘧菌酯 Azoxystrobin",
+              content: "原药容量 185吨, 市值 1,450万美元。原药登记无数据补偿。",
+            },
           ],
         },
       },
     ],
   },
   glpTechnicalPMRA: {
-    title: { en: "GLP Reports needed for a technical product registration at PMRA", zh: "PMRA 原药登记基本资料要求" },
+    title: {
+      en: "GLP Reports needed for a technical product registration at PMRA",
+      zh: "PMRA 原药登记基本资料要求",
+    },
     content: {
       en: [
         { name: "DACO 0.0.6003 product specification form" },
         { name: "DACO 0.0.6005 application for new or amended product" },
         { name: "DACO 0.0.6011 fee form" },
-        { name: "DACO 0.8 Cover letter (including authorization letter, offer-to-pay letter)" },
+        {
+          name: "DACO 0.8 Cover letter (including authorization letter, offer-to-pay letter)",
+        },
         { name: "DACO 0.9 MSDS" },
         { name: "DACO 1.1.1 English label" },
         { name: "DACO 1.1.2 French label" },
         { name: "DACO 2.1-2.9 chemistry requirements" },
-        { name: "DACO 2.11 manufacturing methods (MSDS of raw material needed)" },
+        {
+          name: "DACO 2.11 manufacturing methods (MSDS of raw material needed)",
+        },
         { name: "DACO 2.12.1 certified limit (GLP)" },
         { name: "DACO 2.13 five batches analysis (GLP)" },
         {
@@ -393,7 +462,10 @@ export const PESTICIDE_REGISTRATION = {
     },
   },
   glpFormulatedPMRA: {
-    title: { en: "GLP Reports needed for a formulated product registration at PMRA ", zh: "PMRA 制剂登记基本资料要求" },
+    title: {
+      en: "GLP Reports needed for a formulated product registration at PMRA ",
+      zh: "PMRA 制剂登记基本资料要求",
+    },
     content: {
       en: [
         { name: "DACO 0.0.6003 product specification form" },
@@ -409,7 +481,9 @@ export const PESTICIDE_REGISTRATION = {
         { name: "DACO 3.1.4 Other names" },
         { name: "DACO 3.2.1 Description of starting materials" },
         { name: "DACO 3.2.2 Description of the formulation process" },
-        { name: "DACO 3.2.3 Description of the formulation of impurities of toxicological concern" },
+        {
+          name: "DACO 3.2.3 Description of the formulation of impurities of toxicological concern",
+        },
         { name: "DACO 3.3.1 Establishing certified limits" },
         { name: "DACO 3.4.1 Enforcement analytical method" },
         {
@@ -449,38 +523,298 @@ export const PESTICIDE_SALES = {
     },
     content: {
       en: [
-        { name: "AgroCity /NewAgCo" },
-        { name: "AgroPlus (Winfield)" },
-        { name: "Alberta Farmers' Association (AFA)" },
-        { name: "Cargill" },
-        { name: "FBN" },
-        { name: "FCL and local Co-ops" },
-        { name: "Federated coop - federated co-operatives limited - Active in BC, SK, AB, MB." },
-        { name: "Interag - (the distribute Bayer products only)" },
-        { name: "La Coop fédérée" },
-        { name: "McCains" },
-        { name: "Norac Concepts (focusing niched crops, such as fruit & veggies)" },
-        { name: "Nutrien - UAP, IPCO (Interprovincial Cooperative Limited)" },
-        { name: "Omex Agriculture Inc (PGRs)" },
-        { name: "Paterson grain" },
-        { name: "Richardson" },
+        {
+          name: "Advantage Crop Protection Inc",
+          type: "html",
+          url: "https://advantagecropprotection.ag/about-us",
+        },
+        {
+          name: "AgraCity/NewAgCo",
+          type: "html",
+          url: "https://agracity.com",
+        },
+        {
+          name: "Agrium Inc",
+          type: "html",
+          url: "https://www.nutrien.com",
+        },
+        {
+          name: "AgroPlus (Winfield's products)",
+          type: "html",
+          url: "https://www.agroplusinc.ca",
+        },
+        {
+          name: "Agro Source Ltd.",
+          type: "html",
+          url: "https://www.agrosourceltd.com",
+        },
+        {
+          name: "Albaugh Canada",
+          type: "html",
+          url: "https://www.albaughllc.ca",
+        },
+        {
+          name: "Cargill",
+          type: "html",
+          url: "https://www.cargill.com",
+        },
+        {
+          name: "Famers Business Network (FBN)",
+          type: "html",
+          url: "https://www.fbn.com",
+        },
+        {
+          name: "FMC Canada",
+          type: "html",
+          url: "https://ag.fmc.com/ca/en",
+        },
+        {
+          name: "FS Services Ontario Ltd",
+          type: "html",
+          url: "https://www.growmark.com",
+        },
+        {
+          name: "Interag - (Bayer's products only)",
+          type: "html",
+          url: "https://www.cropscience.bayer.ca/en/our-company/interag",
+        },
+        {
+          name: "Interprovincial Cooperative Limited (IPCO, formulation plant)",
+          type: "html",
+          url: "https://www.ipco.ca",
+        },
+        {
+          name: "Loveland",
+          type: "html",
+          url: "https://www.lovelandproducts.com",
+        },
+        {
+          name: "McCains",
+          type: "html",
+          url: "https://www.mccain.com",
+        },
+        {
+          name: "Mey Canada Corporation",
+          type: "",
+          url: "",
+        },
+        {
+          name: "Norac Concepts (focusing niched crops, such as fruit & veggies)",
+          type: "html",
+          url: "https://noracconcepts.com",
+        },
+        {
+          name: "Nufarm Canada",
+          type: "html",
+          url: "https://nufarm.com/ca",
+        },
+        {
+          name: "Nutrien - UAP/IPCO/Loveland",
+          type: "html",
+          url: "https://www.nutrien.com",
+        },
+        {
+          name: "Omex Agriculture Inc (PGRs/Biostimulants/Biologicals)",
+          type: "html",
+          url: "https://omexcanada.com",
+        },
+        {
+          name: "Paterson grain",
+          type: "html",
+          url: "https://www.patersongrain.com",
+        },
+        {
+          name: "Premier Tech",
+          type: "html",
+          url: "https://www.premiertech.com",
+        },
+        {
+          name: "Rack Petroleum Ltd",
+          type: "html",
+          url: "https://therackonline.com",
+        },
+        {
+          name: "Richardson International",
+          type: "html",
+          url: "https://www.richardson.ca",
+        },
+        {
+          name: "Sharda Cropchem",
+          type: "html",
+          url: "https://shardacanada.ca",
+        },
+        {
+          name: "SynAgri",
+          type: "html",
+          url: "https://www.synagri.ca/en",
+        },
+        {
+          name: "TeraGro Inc",
+          type: "html",
+          url: "https://teragro.com",
+        },
+        {
+          name: "United Farmers of Alberta (UFA)",
+          type: "html",
+          url: "https://ufa.com",
+        },
+        {
+          name: "UPL Canada",
+          type: "html",
+          url: "https://www.upl-ltd.com/ca",
+        },
+        {
+          name: "Winfield Canada",
+          type: "html",
+          url: "https://www.winfieldunited.ca/en",
+        },
       ],
       zh: [
-        { name: "AgroCity /NewAgCo" },
-        { name: "AgroPlus (Winfield)" },
-        { name: "Alberta Farmers' Association (AFA)" },
-        { name: "Cargill" },
-        { name: "FBN" },
-        { name: "FCL and local Co-ops" },
-        { name: "Federated coop - federated co-operatives limited - Active in BC, SK, AB, MB." },
-        { name: "Interag - (the distribute Bayer products only)" },
-        { name: "La Coop fédérée" },
-        { name: "McCains" },
-        { name: "Norac Concepts (focusing niched crops, such as fruit & veggies)" },
-        { name: "Nutrien - UAP, IPCO (Interprovincial Cooperative Limited)" },
-        { name: "Omex Agriculture Inc (PGRs)" },
-        { name: "Paterson grain" },
-        { name: "Richardson" },
+        {
+          name: "Advantage Crop Protection Inc",
+          type: "html",
+          url: "https://advantagecropprotection.ag/about-us",
+        },
+        {
+          name: "AgraCity/NewAgCo",
+          type: "html",
+          url: "https://agracity.com",
+        },
+        {
+          name: "Agrium Inc",
+          type: "html",
+          url: "https://www.nutrien.com",
+        },
+        {
+          name: "AgroPlus (Winfield's products)",
+          type: "html",
+          url: "https://www.agroplusinc.ca",
+        },
+        {
+          name: "Agro Source Ltd.",
+          type: "html",
+          url: "https://www.agrosourceltd.com",
+        },
+        {
+          name: "Albaugh Canada",
+          type: "html",
+          url: "https://www.albaughllc.ca",
+        },
+        {
+          name: "Cargill",
+          type: "html",
+          url: "https://www.cargill.com",
+        },
+        {
+          name: "Famers Business Network (FBN)",
+          type: "html",
+          url: "https://www.fbn.com",
+        },
+        {
+          name: "FMC Canada",
+          type: "html",
+          url: "https://ag.fmc.com/ca/en",
+        },
+        {
+          name: "FS Services Ontario Ltd",
+          type: "html",
+          url: "https://www.growmark.com",
+        },
+        {
+          name: "Interag - (Bayer's products only)",
+          type: "html",
+          url: "https://www.cropscience.bayer.ca/en/our-company/interag",
+        },
+        {
+          name: "Interprovincial Cooperative Limited (IPCO, formulation plant)",
+          type: "html",
+          url: "https://www.ipco.ca",
+        },
+        {
+          name: "Loveland",
+          type: "html",
+          url: "https://www.lovelandproducts.com",
+        },
+        {
+          name: "McCains",
+          type: "html",
+          url: "https://www.mccain.com",
+        },
+        {
+          name: "Mey Canada Corporation",
+          type: "",
+          url: "",
+        },
+        {
+          name: "Norac Concepts (focusing niched crops, such as fruit & veggies)",
+          type: "html",
+          url: "https://noracconcepts.com",
+        },
+        {
+          name: "Nufarm Canada",
+          type: "html",
+          url: "https://nufarm.com/ca",
+        },
+        {
+          name: "Nutrien - UAP/IPCO/Loveland",
+          type: "html",
+          url: "https://www.nutrien.com",
+        },
+        {
+          name: "Omex Agriculture Inc (PGRs/Biostimulants/Biologicals)",
+          type: "html",
+          url: "https://omexcanada.com",
+        },
+        {
+          name: "Paterson grain",
+          type: "html",
+          url: "https://www.patersongrain.com",
+        },
+        {
+          name: "Premier Tech",
+          type: "html",
+          url: "https://www.premiertech.com",
+        },
+        {
+          name: "Rack Petroleum Ltd",
+          type: "html",
+          url: "https://therackonline.com",
+        },
+        {
+          name: "Richardson International",
+          type: "html",
+          url: "https://www.richardson.ca",
+        },
+        {
+          name: "Sharda Cropchem",
+          type: "html",
+          url: "https://shardacanada.ca",
+        },
+        {
+          name: "SynAgri",
+          type: "html",
+          url: "https://www.synagri.ca/en",
+        },
+        {
+          name: "TeraGro Inc",
+          type: "html",
+          url: "https://teragro.com",
+        },
+        {
+          name: "United Farmers of Alberta (UFA)",
+          type: "html",
+          url: "https://ufa.com",
+        },
+        {
+          name: "UPL Canada",
+          type: "html",
+          url: "https://www.upl-ltd.com/ca",
+        },
+        {
+          name: "Winfield Canada",
+          type: "html",
+          url: "https://www.winfieldunited.ca/en",
+        },
       ],
     },
   },
@@ -491,52 +825,122 @@ export const PESTICIDE_SALES = {
     },
     content: {
       en: [
-        { name: "Jiangsu Good Harvest " },
-        { name: "Jiangsu Huifeng/Adama" },
-        { name: "Alberta Farmers' Association (AFA)" },
-        { name: "Hebei Veyong/Jiangsu Limin " },
-        { name: "Lier Chemical" },
-        { name: "Qingdao Hailir" },
-        { name: "Shandong Kangqiao" },
-        { name: "Wuhai Join King Fine Chemical" },
-        { name: "Zhejiang XinAn" },
-        { name: "Zhejiang Zhongshan" },
+        {
+          name: "Jiangsu Good Harvest ",
+          type: "html",
+          url: "http://www.good-harvest.cn/en",
+        },
+        {
+          name: "Jiangsu Huifeng/Adama",
+          type: "html",
+          url: "http://english.hfagro.com",
+        },
+        {
+          name: "Jiangsu Trustchem",
+          type: "html",
+          url: "http://www.trustchem.cn",
+        },
+        {
+          name: "Hebei Miraculous",
+          type: "html",
+          url: "https://www.hebeichengxin.com",
+        },
+        {
+          name: "Hebei Veyong/Jiangsu Limin",
+          type: "html",
+          url: "http://www.veyong.com",
+        },
+        {
+          name: "Lier Chemical",
+          type: "html",
+          url: "http://www.lierchem.com",
+        },
+        {
+          name: "Ningbo Yichem",
+          type: "html",
+          url: "https://www.yichem.com",
+        },
+        {
+          name: "Qingdao Hailir",
+          type: "html",
+          url: "https://www.hailir.cn/EN",
+        },
+        {
+          name: "Shandong Kangqiao",
+          type: "html",
+          url: "http://www.kqbiotech.com/html/en/index.php",
+        },
+        {
+          name: "Wuhai Join King Fine Chemical",
+          type: "html",
+          url: "http://www.joinkchem.com/en/production/act:186",
+        },
+        {
+          name: "Zhejiang XinAn/Wynca",
+          type: "html",
+          url: "https://www.wynca.com/en",
+        },
       ],
       zh: [
-        { name: "江苏好收成" },
-        { name: "江苏辉丰/安道麦" },
-        { name: "河北威远/江苏利民" },
-        { name: "四川利尔化学" },
-        { name: "青岛海利尔" },
-        { name: "山东康乔" },
-        { name: "乌海/大连九信精细化工" },
-        { name: "浙江新安化工" },
-        { name: "浙江中山" },
+        {
+          name: "Jiangsu Good Harvest ",
+          type: "html",
+          url: "http://www.good-harvest.cn/en",
+        },
+        {
+          name: "Jiangsu Huifeng/Adama",
+          type: "html",
+          url: "http://english.hfagro.com",
+        },
+        {
+          name: "Jiangsu Trustchem",
+          type: "html",
+          url: "http://www.trustchem.cn",
+        },
+        {
+          name: "Hebei Miraculous",
+          type: "html",
+          url: "https://www.hebeichengxin.com",
+        },
+        {
+          name: "Hebei Veyong/Jiangsu Limin",
+          type: "html",
+          url: "http://www.veyong.com",
+        },
+        {
+          name: "Lier Chemical",
+          type: "html",
+          url: "http://www.lierchem.com",
+        },
+        {
+          name: "Ningbo Yichem",
+          type: "html",
+          url: "https://www.yichem.com",
+        },
+        {
+          name: "Qingdao Hailir",
+          type: "html",
+          url: "https://www.hailir.cn/EN",
+        },
+        {
+          name: "Shandong Kangqiao",
+          type: "html",
+          url: "http://www.kqbiotech.com/html/en/index.php",
+        },
+        {
+          name: "Wuhai Join King Fine Chemical",
+          type: "html",
+          url: "http://www.joinkchem.com/en/production/act:186",
+        },
+        {
+          name: "Zhejiang XinAn/Wynca",
+          type: "html",
+          url: "https://www.wynca.com/en",
+        },
       ],
     },
   },
-  distributedProducts: {
-    title: {
-      en: "We are distributing the following products",
-      zh: "正在销售产品英文标签",
-    },
-    content: {
-      en: [
-        { name: "NASA 36 (Glyphosate 360)", type: "pdf", url: "nasa36.pdf" },
-        { name: "FREEDOM GLYPHOSATE POTASSIUM SALT 540 LIQUID HERBICIDE", type: "pdf", url: "freedom-glyphosate.pdf" },
-        { name: "Lier Glufosinate 150 SN", type: "pdf", url: "lier-glufosinate-150-sn-english-label.pdf" },
-        { name: "FOISON Glufosinate Ammonium 200 SN", type: "pdf", url: "foison-glufosinate-ammonium.pdf" },
-        { name: "Brassinolide 0.01%", type: "pdf", url: "brassinolide.pdf" },
-      ],
-      zh: [
-        { name: "草甘膦 360 g/L", type: "pdf", url: "nasa36.pdf" },
-        { name: "草甘膦 540K", type: "pdf", url: "freedom-glyphosate.pdf" },
-        { name: "草铵膦 150 SN", type: "pdf", url: "foison-glufosinate-ammonium.pdf" },
-        { name: "草铵膦 200 SN", type: "pdf", url: "lier-glufosinate-150-sn-english-label.pdf" },
-        { name: "芸苔素内酯 0.01%", type: "pdf", url: "brassinolide.pdf" },
-      ],
-    },
-  },
+
   summary: {
     en: "Hanson AgroSciences sell both technical and formulations of glyphosate, glufosinate, s-metolachlor, boscalid, florasulam, bentazon, prothioconazole, clethodim, flucarbazone, tebuconazole, and metalaxyl et al, we can also source hundreds of active ingredients for you from China and India.",
     zh: "汉森农科销售以下产品的原药和制剂，比如草甘膦、草铵膦、精异丙甲草胺、啶酰菌胺、双氟磺草胺、苯达松、丙硫菌唑、烯草酮、氟唑磺隆、戊唑醇、甲霜灵等。我们可以从中国和印度采购上百种有效成分。",
@@ -564,19 +968,51 @@ export const MARKET_SURVEY = {
         type: "",
         url: "",
       },
-      { name: "Agrow Report: Global Production and Market Analysis of Glufosinate ammonium 2019", type: "", url: "" },
-      { name: "Agrow Report: US Pesticide Product Registration Overview 2018", type: "", url: "" },
-      { name: "Agrow Report: Top Chinese Crop Protection Companies 2018", type: "", url: "" },
+      {
+        name: "Agrow Report: Global Production and Market Analysis of Glufosinate ammonium 2019",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: US Pesticide Product Registration Overview 2018",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: Top Chinese Crop Protection Companies 2018",
+        type: "",
+        url: "",
+      },
       {
         name: "AG-Top-Chinese-Crop-Protection-Companies-2018-REPORT, Shuyou Han 0415[1842]",
         type: "pdf",
         url: "ag-top-chinese-crop-protection-companies-2018-report.pdf",
       },
-      { name: "Agrow Report: Thailand Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: China Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: Canada Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: Viet Nam Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: China Top 30 Companies (2016)", type: "", url: "" },
+      {
+        name: "Agrow Report: Thailand Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: China Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: Canada Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: Viet Nam Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: China Top 30 Companies (2016)",
+        type: "",
+        url: "",
+      },
     ],
     zh: [
       {
@@ -589,19 +1025,51 @@ export const MARKET_SURVEY = {
         type: "",
         url: "",
       },
-      { name: "Agrow Report: Global Production and Market Analysis of Glufosinate ammonium 2019", type: "", url: "" },
-      { name: "Agrow Report: US Pesticide Product Registration Overview 2018", type: "", url: "" },
-      { name: "Agrow Report: Top Chinese Crop Protection Companies 2018", type: "", url: "" },
+      {
+        name: "Agrow Report: Global Production and Market Analysis of Glufosinate ammonium 2019",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: US Pesticide Product Registration Overview 2018",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: Top Chinese Crop Protection Companies 2018",
+        type: "",
+        url: "",
+      },
       {
         name: "AG-Top-Chinese-Crop-Protection-Companies-2018-REPORT, Shuyou Han 0415[1842]",
         type: "pdf",
         url: "ag-top-chinese-crop-protection-companies-2018-report.pdf",
       },
-      { name: "Agrow Report: Thailand Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: China Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: Canada Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: Viet Nam Pesticide Product Registration Overview 2017", type: "", url: "" },
-      { name: "Agrow Report: China Top 30 Companies (2016)", type: "", url: "" },
+      {
+        name: "Agrow Report: Thailand Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: China Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: Canada Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: Viet Nam Pesticide Product Registration Overview 2017",
+        type: "",
+        url: "",
+      },
+      {
+        name: "Agrow Report: China Top 30 Companies (2016)",
+        type: "",
+        url: "",
+      },
     ],
   },
 };

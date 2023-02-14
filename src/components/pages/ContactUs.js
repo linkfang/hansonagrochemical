@@ -24,18 +24,33 @@ export default function ContactUs({ setBannerImg }) {
             <p>hanshuyou@gmail.com</p>
           </a>
           <div className="contactItem">
-            <img className="weChatIcon" width={28} src={weChatIcon} alt="WeChat icon" />
+            <img
+              className="weChatIcon"
+              width={28}
+              src={weChatIcon}
+              alt="WeChat icon"
+            />
             <p>hanshuyoucan</p>
           </div>
           <div className="contactItem">
             <i className="bi bi-skype"></i>
             <p>hanshuyoucan</p>
           </div>
-          <a className="contactItem" target="_blank" href="https://twitter.com/ShuyouHan">
+          <a
+            className="contactItem"
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/ShuyouHan"
+          >
             <i className="bi bi-twitter"></i>
             <p>ShuyouHan</p>
           </a>
-          <a className="contactItem" target="_blank" href="https://www.linkedin.com/in/shuyou-han-30b47853/">
+          <a
+            className="contactItem"
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/shuyou-han-30b47853/"
+          >
             <i className="bi bi-linkedin"></i>
             <p>Shuyou Han</p>
           </a>

@@ -1,7 +1,13 @@
 import pdfIcon from "../../assets/icons/file-earmark-pdf.svg";
 import htmlIcon from "../../assets/icons/filetype-html.svg";
 
-export default function ListSection({ title, description, items, language, className }) {
+export default function ListSection({
+  title,
+  description,
+  items,
+  language,
+  className,
+}) {
   const rowClassName = className || "";
   const renderListItems = (data) =>
     data.content[language].map((item) => {
@@ -13,6 +19,7 @@ export default function ListSection({ title, description, items, language, class
               key={item.name}
               href={require(`../../assets/files/pdf/${item.url}`)}
               target="_blank"
+              rel="noreferrer"
             >
               <img className="pdfIcon" src={pdfIcon} alt="PDF icon" />
               {item.name}
@@ -20,7 +27,13 @@ export default function ListSection({ title, description, items, language, class
           );
         case "html":
           return (
-            <a className="listItem margin-0" key={item.name} href={item.url} target="_blank">
+            <a
+              className="listItem margin-0"
+              key={item.name}
+              href={item.url}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img className="htmlIcon" src={htmlIcon} alt="HTML icon" />
               {item.name}
             </a>

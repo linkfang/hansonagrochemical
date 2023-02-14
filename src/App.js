@@ -256,7 +256,7 @@ function App() {
           <Route path="/contact" element={<ContactUs language={language} setBannerImg={setBannerImg} />} exact></Route>
         </Routes>
       </div>
-      <footer>© Hanson Agrochemical Consulting® 2022</footer>
+      <footer>© Hanson Agrochemical Consulting® 2023</footer>
 
       <div id="overlay" className={showOverlay ? "active" : ""} onClick={() => setShowOverlay(false)}></div>
     </HashRouter>
