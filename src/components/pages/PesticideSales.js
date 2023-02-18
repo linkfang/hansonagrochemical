@@ -262,6 +262,7 @@ export default function PesticideSales({ language, setBannerImg }) {
                 flex: 1,
                 boxShadow: "0 0 20px rgba(0,0,0,0.05)",
               }}
+              scroll={{ x: 600 }}
             />
           </div>
         </div>
