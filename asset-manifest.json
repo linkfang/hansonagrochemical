@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.787a014d.css",
-    "main.js": "/static/js/main.e5d88260.js",
+    "main.js": "/static/js/main.c2d5f5cc.js",
     "static/js/787.162a034d.chunk.js": "/static/js/787.162a034d.chunk.js",
     "static/media/plant-video.mp4": "/static/media/plant-video.d10d807bebae5f5a0107.mp4",
     "static/media/pesticide-in-canada.mp4": "/static/media/pesticide-in-canada.a7be050a3cb15bc8c5f0.mp4",
@@ -71,11 +71,11 @@
     "static/media/about.svg": "/static/media/about.760d58cae47778eb0d7eec441d1f5f07.svg",
     "static/media/bullseye.svg": "/static/media/bullseye.4f4276683b17d3f8b68da0785d9ca9c3.svg",
     "main.787a014d.css.map": "/static/css/main.787a014d.css.map",
-    "main.e5d88260.js.map": "/static/js/main.e5d88260.js.map",
+    "main.c2d5f5cc.js.map": "/static/js/main.c2d5f5cc.js.map",
     "787.162a034d.chunk.js.map": "/static/js/787.162a034d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.787a014d.css",
-    "static/js/main.e5d88260.js"
+    "static/js/main.c2d5f5cc.js"
   ]
 }
