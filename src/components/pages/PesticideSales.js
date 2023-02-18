@@ -188,16 +188,30 @@ const columns = [
     dataIndex: "products",
     key: "products",
     width: "50%",
+    sorter: (a, b) => a.products.localeCompare(b.products),
   },
   {
     title: "Formulation Types",
     dataIndex: "formulation_types",
     key: "formulation_types",
+    filters: [
+      { text: "Formulated", value: "Formulated" },
+      { text: "Technical", value: "Technical" },
+    ],
+    onFilter: (value, record) => record?.formulation_types === value,
+    sorter: (a, b) => a.formulation_types.localeCompare(b.formulation_types),
   },
   {
     title: "Class",
     dataIndex: "class",
     key: "class",
+    filters: [
+      { text: "Herbicide", value: "Herbicide" },
+      { text: "PGR", value: "PGR" },
+      { text: "Fungicide", value: "Fungicide" },
+    ],
+    onFilter: (value, record) => record?.class === value,
+    sorter: (a, b) => a.class.localeCompare(b.class),
   },
   {
     title: "Labels (En)",
